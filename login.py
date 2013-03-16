@@ -2,8 +2,8 @@ from requests import session
 import unicodedata
 
 payload = {
-    'UserName': "andytheyu@gmail.com",
-    'Password': "hongseok426"
+    'UserName': "",
+    'Password': ""
 }
 
 with session() as c:
