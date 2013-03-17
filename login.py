@@ -2,8 +2,8 @@ from requests import session
 import unicodedata
 
 payload = {
-    'UserName': "andytheyu@gmail.com",
-    'Password': "hongseok426"
+    'UserName': "",
+    'Password': ""
 }
 
 with session() as c:
@@ -12,4 +12,3 @@ with session() as c:
     string=request.text.encode('ascii','ignore')
     f = file ('gradebook.html','w')
     f.write(string)
-    print string
