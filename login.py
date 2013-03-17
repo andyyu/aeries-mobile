@@ -12,3 +12,8 @@ with session() as c:
     string=request.text.encode('ascii','ignore')
     f = file ('gradebook.html','w')
     f.write(string)
+def getgrades(periodurl, filename):
+	request = c.get(periodurl)
+	string=request.text.encode('ascii','ignore')
+	f = file (filename,'w')
+	f.write(string)
