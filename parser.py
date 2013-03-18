@@ -20,8 +20,12 @@ def parse_classinfo(period):
 
 def class_grades(periodnum):
 	login.getgrades(classes[periodnum]["classurl"], classes[periodnum]["name"]+".html")
-	g = file ('classgrades.html','r')
-	return g.read()
+	g = file ('classes[periodnum]["name"]+".html','r')
+	return g
+
+def parse_grades(periodnum):
+	gradesoup = BeautifulSoup(class_grades(periodnum).read())
+	rows = soup.find_all("tr", "NormalRow")
 
 parse_classes()
 print classes
