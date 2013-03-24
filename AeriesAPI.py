@@ -1,6 +1,9 @@
 from requests import session
 import unicodedata
 from bs4 import BeautifulSoup
+"""
+
+"""
 class AeriesAPI:
 
 	def __init__(self,username,password):
