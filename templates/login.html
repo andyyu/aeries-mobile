@@ -1,0 +1,13 @@
+<html>
+<head>
+	<title>Login | Aeries Mobile</title>
+</head>
+<body>
+	<div id= "login_form">
+		<form method="POST" action="{{ url_for('login')}}">
+			<label>Username:</label><input type= "text" name= "user" /><br>
+			<label>Password:</label><input type= "password" name= "pass" /><br>
+			<input type= "submit" value= "Log in!" />
+		</form>
+</body>
+</html>

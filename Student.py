@@ -11,5 +11,5 @@ class Student:
 		self.password=pw
 		self.aeries= AeriesAPI.AeriesAPI(user,pw)
 		self.periods=self.aeries.getPeriods()
-
- 
+		
+	
