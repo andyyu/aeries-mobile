@@ -26,6 +26,7 @@ class AeriesAPI:
 		for anyrow in rows:
 			if anyrow.contents[9].contents[0]!=null:
 				rows.remove(anyrow)
+		#No idea if this works
 		for period in rows:
 			classinfo = {}
 			classinfo["name"] = (period.contents[1].text.encode('ascii','ignore'))
