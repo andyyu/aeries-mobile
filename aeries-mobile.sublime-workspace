@@ -1,0 +1,824 @@
+{
+	"auto_complete":
+	{
+		"selected_items":
+		[
+			[
+				"gradebookHTM",
+				"gradebookHTML"
+			],
+			[
+				"var",
+				"var: context variable (var)"
+			],
+			[
+				"append",
+				"append"
+			],
+			[
+				"get",
+				"getLocalSet"
+			],
+			[
+				"sub",
+				"subscript"
+			],
+			[
+				"subsc",
+				"subscript"
+			],
+			[
+				"container",
+				"container"
+			]
+		]
+	},
+	"buffers":
+	[
+		{
+			"file": "/C/Users/shivam/Documents/Projects/aeries-mobile/Student.py",
+			"settings":
+			{
+				"buffer_size": 284,
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "/C/Users/shivam/Documents/Projects/aeries-mobile/AeriesAPI.py",
+			"settings":
+			{
+				"buffer_size": 2780,
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "/C/Users/shivam/Documents/Projects/aeries-mobile/tests/AeriesAPITester.py",
+			"settings":
+			{
+				"buffer_size": 370,
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "/C/Users/shivam/AppData/Roaming/Sublime Text 2/Packages/Default/Default (Windows).sublime-keymap",
+			"settings":
+			{
+				"buffer_size": 30029,
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "/C/Users/shivam/Documents/Projects/aeries-mobile/hello.py",
+			"settings":
+			{
+				"buffer_size": 630,
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "/C/Users/shivam/Documents/Projects/aeries-mobile/templates/gradebook.html",
+			"settings":
+			{
+				"buffer_size": 310,
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "/C/Users/shivam/Documents/Projects/aeries-mobile/templates/login.html",
+			"settings":
+			{
+				"buffer_size": 353,
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "/C/Users/shivam/Documents/Projects/aeries-mobile/login.py",
+			"settings":
+			{
+				"buffer_size": 529,
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "/C/Users/shivam/Documents/Projects/aeries-mobile/run_tests.py",
+			"settings":
+			{
+				"buffer_size": 69,
+				"line_ending": "Windows"
+			}
+		}
+	],
+	"build_system": "",
+	"command_palette":
+	{
+		"height": 392,
+		"selected_items":
+		[
+			[
+				"packa",
+				"Package Control: Install Package"
+			],
+			[
+				"install",
+				"Package Control: Install Package"
+			],
+			[
+				"package",
+				"Package Control: Remove Package"
+			],
+			[
+				"docblockr",
+				"DocBlockr: Decorate line comment"
+			],
+			[
+				"",
+				"DocBlockr: Decorate line comment"
+			],
+			[
+				"doc",
+				"DocBlockr: Reparse comment block"
+			],
+			[
+				"tidy",
+				"Tidy HTML"
+			],
+			[
+				"tid",
+				"Tidy HTML"
+			],
+			[
+				"ftp",
+				"SFTP: Edit Server…"
+			],
+			[
+				"preferences",
+				"Preferences: Browse Packages"
+			],
+			[
+				"prefere",
+				"Preferences: Package Control Settings – Default"
+			],
+			[
+				"ins",
+				"Package Control: Install Package"
+			],
+			[
+				"pac",
+				"Package Control: Install Package"
+			],
+			[
+				"pack",
+				"Package Control: Install Package"
+			],
+			[
+				"dja",
+				"Set Syntax: HTML (Django)"
+			],
+			[
+				"set  Syntax: java",
+				"Set Syntax: JavaScript"
+			],
+			[
+				"packageControl: ",
+				"Package Control: Install Package"
+			],
+			[
+				"package control ",
+				"Package Control: Install Package"
+			],
+			[
+				"latex",
+				"LaTeXTools: View PDF"
+			],
+			[
+				"late",
+				"LaTeXTools: View PDF"
+			],
+			[
+				"package control: Ins",
+				"Package Control: Install Package"
+			]
+		],
+		"width": 400
+	},
+	"console":
+	{
+		"height": 129
+	},
+	"distraction_free":
+	{
+		"menu_visible": true,
+		"show_minimap": false,
+		"show_open_files": true,
+		"show_tabs": false,
+		"side_bar_visible": false,
+		"status_bar_visible": false
+	},
+	"file_history":
+	[
+		"/C/Users/shivam/Documents/Projects/aeries-mobile/tests/__init__.py",
+		"/C/Users/shivam/Documents/Projects/aeries-mobile/tests/AeriesAPITester",
+		"/C/Users/shivam/Documents/Projects/aeries-mobile/parser.py",
+		"/C/Users/shivam/Documents/Projects/aeries-mobile/AeriesAPI",
+		"/C/Users/shivam/Documents/school/2012-13/2_compsci/SAT-Vocab-Chrome-Extension/popup.html",
+		"/C/Users/shivam/Documents/school/2012-13/2_compsci/SAT-Vocab-Chrome-Extension/js/other.js",
+		"/C/Users/shivam/Documents/python/script/terms.txt",
+		"/C/Users/shivam/Documents/Projects/khaninterview.js",
+		"/C/Users/shivam/Documents/Projects/aeries-mobile/gradebook.html",
+		"/C/Users/shivam/Documents/Projects/aeries-mobile/.git/config",
+		"/C/Users/shivam/Documents/Projects/aeries-mobile/login.py",
+		"/C/Users/shivam/Documents/Projects/khan exercises/exercises/average_rate_of_change.html",
+		"/C/Users/shivam/Documents/Projects/khan exercises/.git/config",
+		"/C/Users/shivam/Documents/python/quora challenges/feedoptimizer.py",
+		"/C/Users/shivam/DOCUME~1/Projects/FIRSTK~1/average_rate_of_change.html",
+		"/C/Users/shivam/AppData/Roaming/Sublime Text 2/Packages/User/Default (Windows).sublime-keymap",
+		"/C/Users/shivam/AppData/Roaming/Sublime Text 2/Packages/Default/Default (Windows).sublime-keymap",
+		"/C/Users/shivam/Documents/Projects/sat flashcards/site/index.html",
+		"/C/Users/shivam/Documents/school/2012-13/2_compsci/SAT-Vocab-Chrome-Extension/README.md",
+		"/C/Users/shivam/Documents/Django/tunetype/templates/tunetype/index.html",
+		"/C/Users/shivam/Documents/Django/tunetype/templates/base.html",
+		"/C/Users/shivam/Documents/Projects/sat flashcards/site/ftpsync.settings",
+		"/C/Users/shivam/Documents/Django/tunetype/templates/battle/lyrics.html",
+		"/C/Users/shivam/Documents/school/2012-13/1_eng/bovary/essay.tex",
+		"/C/Users/shivam/AppData/Roaming/Sublime Text 2/Packages/LaTeXTools/LaTeX.sublime-build",
+		"/C/Users/shivam/Desktop/usb/Programs/Sublime Text 1.4/Data/Packages/LaTeX/LaTeX.sublime-build",
+		"/C/Users/shivam/Documents/school/2012-13/ib/ee_tex/essay.tex",
+		"/C/Users/shivam/Documents/school/2012-13/ib/ee_tex/wordcount.tex",
+		"/C/Users/shivam/Documents/school/2012-13/ib/ee_tex/test_title.tex",
+		"/C/Users/shivam/Documents/school/2012-13/ib/ee_tex/title.tex",
+		"/C/Users/shivam/Documents/school/2012-13/ib/ee_tex/mybib.bib",
+		"/C/Users/shivam/Documents/school/2012-13/ib/ee_tex/essay.bcf",
+		"/C/Users/shivam/Documents/school/2012-13/ib/ee_tex - Copy/essay.bcf",
+		"/C/Users/shivam/Documents/school/2012-13/ib/ee_tex/title.aux",
+		"/C/Users/shivam/Documents/school/2012-13/ib/ee_tex/wordcount.py",
+		"/C/Users/shivam/Documents/school/2012-13/ib/ee_tex - Copy/essay.tex",
+		"/C/Users/shivam/Documents/school/2012-13/1_eng/bovary/essay.aux",
+		"/C/Users/shivam/Documents/school/2012-13/ib/ee_tex - Copy/essay.aux",
+		"/C/Users/shivam/AppData/Roaming/Sublime Text 2/Packages/LaTeXTools/LaTeXTools Preferences.sublime-settings",
+		"/C/Users/shivam/AppData/Roaming/Sublime Text 2/Packages/User/LaTeXTools Preferences.sublime-settings",
+		"/C/Users/shivam/Documents/school/2012-13/ib/ee tex/mybib.bib",
+		"/C/Users/shivam/Documents/school/2012-13/ib/ee tex/essay.tex",
+		"/C/Users/shivam/Documents/school/2012-13/2_compsci/SAT-Vocab-Chrome-Extension/js/QuizletFetcher.js",
+		"/C/Users/shivam/Documents/school/2012-13/2_compsci/SAT-Vocab-Chrome-Extension/js/CardMaker.js",
+		"/C/Users/shivam/Documents/school/2012-13/2_compsci/SAT-Vocab-Chrome-Extension/css/style2.css",
+		"/C/Users/shivam/Documents/school/2012-13/2_compsci/SAT-Vocab-Chrome-Extension/manifest.json",
+		"/E/School/2_compsci/WOO/Dossier Part C/New Folder/background.html",
+		"/E/School/2_compsci/WOO/Dossier Part C/New Folder/popup.html",
+		"/E/School/2_compsci/WOO/Dossier Part C/New Folder/content_script.js",
+		"/E/School/2_compsci/WOO/Dossier Part C/New Folder/popup.js",
+		"/C/Users/shivam/Documents/school/2012-13/ib/ee tex/test_title.tex",
+		"/C/Users/shivam/Documents/school/2012-13/ib/ee tex/wordcount.py",
+		"/C/Users/shivam/Documents/school/2012-13/ib/ee tex/title.tex",
+		"/C/Users/shivam/Documents/school/2012-13/ib/ee tex/wordcount.tex",
+		"/C/Users/shivam/Documents/school/2012-13/2_compsci/SAT-Vocab-Chrome-Extension/js/QuizMaker.js",
+		"/C/Users/shivam/Documents/python/script/words.txt",
+		"/C/Users/shivam/Documents/python/script/terms.py",
+		"/C/Users/shivam/Documents/haskell/helloworld.hs",
+		"/C/Users/shivam/DOCUME~1/python/QUORAC~1/feedoptimizer.py",
+		"/C/Users/shivam/Documents/school/2012-13/2_compsci/SAT-Vocab-Chrome-Extension/css/style.css",
+		"/E/School/2_compsci/SAT-Vocab-Chrome-Extension-master/SAT-Vocab-Chrome-Extension-master/css/style2.css",
+		"/C/Users/shivam/AppData/Local/Temp/Temp1_FortAwesome-Font-Awesome-v3.0.2-0-g13d5dd3.zip/FortAwesome-Font-Awesome-13d5dd3/css/font-awesome.css",
+		"/E/School/2_compsci/satvocab/js/QuizletFetcher.js",
+		"/C/Users/shivam/AppData/Roaming/Sublime Text 2/Packages/DocBlockr/js.sublime-completions",
+		"/C/Users/shivam/AppData/Roaming/Sublime Text 2/Packages/Default/Default/Add Line.sublime-macro",
+		"/C/Users/shivam/AppData/Roaming/Sublime Text 2/Packages/DocBlockr/jsdocs.py",
+		"/C/Users/shivam/AppData/Roaming/Sublime Text 2/Packages/User/Base File.sublime-settings",
+		"/C/Users/shivam/AppData/Roaming/Sublime Text 2/Packages/DocBlockr/Base File.sublime-settings",
+		"/C/Users/shivam/Documents/Django/tunetype/training/views.py",
+		"/C/Users/shivam/Documents/school/2012-13/1_eng/bovary/texexample.tex",
+		"/C/Users/shivam/Documents/Projects/freelance/new site/ftpsync.settings",
+		"/C/Users/shivam/Documents/Projects/freelance/new site/index.html",
+		"/C/Users/shivam/Documents/Projects/freelance/new site/style.css",
+		"/C/Users/shivam/Documents/school/2012-13/2_compsci/SAT-Vocab-Chrome-Extension/css/style",
+		"/C/Users/shivam/Documents/Projects/freelance/new site/new new/index.html",
+		"/C/Users/shivam/Downloads/cssrefresh.js",
+		"/C/Users/shivam/AppData/Roaming/Sublime Text 2/Packages/User/LaTeX.sublime-settings",
+		"/E/School/1_eng/homessay/backup",
+		"/E/School/1_eng/homessay/homessay.tex",
+		"/C/Users/shivam/AppData/Roaming/Sublime Text 2/Packages/User/Python.sublime-settings",
+		"/C/Program Files (x86)/Sublime Text 2/Pristine Packages/Default.sublime-package",
+		"/C/Program Files (x86)/Sublime Text 2/Pristine Packages/LaTeX.sublime-package",
+		"/C/Users/shivam/AppData/Roaming/Sublime Text 2/Packages/User/Global.sublime-settings",
+		"/C/Users/shivam/AppData/Roaming/Sublime Text 2/Packages/FTPSync/FTPSync.sublime-settings",
+		"/C/Users/shivam/AppData/Roaming/Sublime Text 2/Packages/User/FTPSync.sublime-settings",
+		"/C/Users/shivam/AppData/Roaming/Sublime Text 2/Packages/Package Control/Package Control.sublime-settings",
+		"/C/Users/shivam/AppData/Roaming/Sublime Text 2/Packages/User/SFTP.errors.log",
+		"/C/Users/shivam/Documents/Django/tunetype-heroku/tunetype/templates/base.html",
+		"/E/School/0_bio/Winterbreak essays/osmosis/main.tex",
+		"/E/School/1_eng/sunalsorises/sunalsorises.tex",
+		"/E/School/0_bio/Winterbreak essays/osmosis/essay1.tex",
+		"/E/coding/learning node.js/index.js",
+		"/E/coding/learning node.js/server.js",
+		"/E/coding/learning node.js/router.js",
+		"/E/coding/learning node.js/requestHandlers.js",
+		"/E/coding/learning node.js/route.js",
+		"/E/School/0_bio/Winterbreak essays/osmosis/essay3.tex",
+		"/E/School/0_bio/Winterbreak essays/osmosis/essay2.tex",
+		"/E/School/0_bio/Winterbreak essays/osmosis/osmosis.tex",
+		"/C/Users/shivam/Documents/Django/tunetype/static/js/lyrics.js",
+		"/C/Users/shivam/Documents/Django/tunetype/templates/training/lyrics.html",
+		"/C/Users/shivam/Documents/Django/tunetype/static/js/battle.js",
+		"/C/Users/shivam/Downloads/CodeWarsOld/CodeWarsOld/public/js/bug_detector.js",
+		"/C/Users/shivam/Documents/Django/tunetype/static/css/style.css",
+		"/C/Users/shivam/Downloads/CodeWarsOld/CodeWarsOld/public/code_ninja.html",
+		"/C/Users/shivam/Documents/Django/tunetype/tunetype/urls.py",
+		"/C/Users/shivam/Documents/Django/tunetype/training/urls.py",
+		"/C/Users/shivam/Downloads/CodeWarsOld/CodeWarsOld/public/js/code_ninja.js",
+		"/C/Users/shivam/Downloads/CodeWarsOld/CodeWarsOld/public/js/ninja_tests.js",
+		"/C/Users/shivam/Documents/Django/tunetype/battle/views.py",
+		"/C/Users/shivam/Documents/Django/tunetype/templates/battle/backup",
+		"/C/Users/shivam/Documents/Django/tunetype/battle/urls.py",
+		"/C/Users/shivam/Documents/Django/tunetype/tunetype/settings.py",
+		"/C/Users/shivam/Documents/Django/tunetype/templates/404.html",
+		"/C/Users/shivam/Documents/Django/tunetype/templates/tunetype/base.html",
+		"/C/Users/shivam/Documents/Django/tunetype/templates/lyriccheck/lyrics.html",
+		"/C/Users/shivam/Documents/Django/tunetype/lyriccheck/static/css/style.css",
+		"/C/Users/shivam/Documents/Django/tunetype/tunetype/views.py",
+		"/C/Users/shivam/Documents/Django/tunetype/lyriccheck/views.py",
+		"/C/Users/shivam/Documents/Django/tunetype/lyriccheck/static/css/bootstrap.css",
+		"/C/Users/shivam/Documents/Django/tunetype/manage.py",
+		"/C/Users/shivam/Documents/Django/tunetype/lyriccheck/urls.py",
+		"/C/Python27/Lib/disutils/msvc9compiler.py",
+		"/C/Python27/Lib/distutils/msvccompiler.py",
+		"/C/Users/shivam/Documents/Django/tunetype/procfile",
+		"/C/Users/shivam/Documents/Django/tunetype/lyriccheck/static/js/strcmp.js",
+		"/E/School/1_eng/houseofmirthpassage/essay.tex",
+		"/E/School/4_philo/texexample/texexample.tex"
+	],
+	"find":
+	{
+		"height": 38
+	},
+	"find_in_files":
+	{
+		"height": 85,
+		"include_history":
+		[
+			""
+		],
+		"location_history":
+		[
+			"<open files>",
+			"C:\\Users\\shivam\\Documents\\Django\\tunetype",
+			"tunetype",
+			"<open files>",
+			"<open folders>"
+		]
+	},
+	"find_state":
+	{
+		"case_sensitive": true,
+		"find_history":
+		[
+			"[0-9]+\\.\\s",
+			"\\[0-9]+.",
+			"[0-9]+.\\s",
+			"\\[0-9]+.",
+			"[0-9]+.",
+			"print",
+			" \"",
+			"FSQUARE_CO",
+			"thus",
+			"essentiall",
+			"&",
+			" ",
+			"Func",
+			"height",
+			"#",
+			"Functional Programming in C",
+			"object",
+			"zulu",
+			"-",
+			"–",
+			"’",
+			"“",
+			"”",
+			" – ",
+			"button ",
+			"showScreen",
+			"showSCreen",
+			"showScreen",
+			"13",
+			"$name",
+			"link",
+			"$name",
+			"data-href",
+			"back",
+			"#",
+			"load",
+			"showScreen",
+			"title",
+			"showScree",
+			"prev",
+			"curr",
+			"first",
+			"card",
+			"showScreen('set",
+			"ajax",
+			"load",
+			"ont-size",
+			"function",
+			"opule",
+			"opulet",
+			"restra",
+			"saga",
+			"apprehe",
+			"taciturn",
+			"tasiturn",
+			"pretenti",
+			"drone",
+			"overflow",
+			"wrap",
+			"Ros",
+			"ros",
+			"rose",
+			"simon",
+			"opponent_sc",
+			"checkIn",
+			"accurac",
+			"score",
+			"userIscore",
+			"userIds",
+			"score",
+			"userIds",
+			"CodeNinja",
+			"var CodeNinja",
+			"CodeNinja",
+			"publish",
+			"goToL",
+			"lyrics_ch",
+			"lyri",
+			"40px",
+			"template",
+			"ftp://njrotc@troyhigh.com@njrotc.troyhigh.com/pages/",
+			"getDif",
+			"getDiff",
+			"getdiff",
+			"_getFromWebService",
+			"getartists",
+			"query",
+			"slice",
+			"stringcheck",
+			"console",
+			",",
+			"import",
+			"ytunes",
+			"matches",
+			"ytunes",
+			"depend",
+			"  ",
+			"    ",
+			"template",
+			"template_",
+			"install",
+			"maxlength"
+		],
+		"highlight": true,
+		"in_selection": false,
+		"preserve_case": false,
+		"regex": true,
+		"replace_history":
+		[
+			"",
+			"\"",
+			"\\\\&",
+			"\\&",
+			" ",
+			"--",
+			"-",
+			"'",
+			"\"",
+			"-",
+			"Player",
+			"",
+			"substr",
+			"tunetype",
+			"    ",
+			"",
+			"max_length"
+		],
+		"reverse": false,
+		"show_context": true,
+		"use_buffer": true,
+		"whole_word": false,
+		"wrap": true
+	},
+	"groups":
+	[
+		{
+			"selected": 2,
+			"sheets":
+			[
+				{
+					"buffer": 0,
+					"file": "/C/Users/shivam/Documents/Projects/aeries-mobile/Student.py",
+					"settings":
+					{
+						"buffer_size": 284,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								284,
+								284
+							]
+						],
+						"settings":
+						{
+							"incomplete_sync": null,
+							"syntax": "Packages/Djaneiro/Syntaxes/Python Django.tmLanguage"
+						},
+						"translation.x": 0,
+						"translation.y": 0,
+						"zoom_level": 1
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 1,
+					"file": "/C/Users/shivam/Documents/Projects/aeries-mobile/AeriesAPI.py",
+					"settings":
+					{
+						"buffer_size": 2780,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								1819,
+								1819
+							]
+						],
+						"settings":
+						{
+							"incomplete_sync": null,
+							"syntax": "Packages/Djaneiro/Syntaxes/Python Django.tmLanguage"
+						},
+						"translation.x": 0,
+						"translation.y": 584,
+						"zoom_level": 1
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 2,
+					"file": "/C/Users/shivam/Documents/Projects/aeries-mobile/tests/AeriesAPITester.py",
+					"settings":
+					{
+						"buffer_size": 370,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								103,
+								103
+							]
+						],
+						"settings":
+						{
+							"incomplete_sync": null,
+							"syntax": "Packages/Djaneiro/Syntaxes/Python Django.tmLanguage"
+						},
+						"translation.x": 0,
+						"translation.y": 0,
+						"zoom_level": 1
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 3,
+					"file": "/C/Users/shivam/AppData/Roaming/Sublime Text 2/Packages/Default/Default (Windows).sublime-keymap",
+					"settings":
+					{
+						"buffer_size": 30029,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								11588,
+								11588
+							]
+						],
+						"settings":
+						{
+							"incomplete_sync": null,
+							"syntax": "Packages/JavaScript/JSON.tmLanguage"
+						},
+						"translation.x": 0,
+						"translation.y": 3519,
+						"zoom_level": 1
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 4,
+					"file": "/C/Users/shivam/Documents/Projects/aeries-mobile/hello.py",
+					"settings":
+					{
+						"buffer_size": 630,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								630,
+								630
+							]
+						],
+						"settings":
+						{
+							"incomplete_sync": null,
+							"syntax": "Packages/Djaneiro/Syntaxes/Python Django.tmLanguage"
+						},
+						"translation.x": 0,
+						"translation.y": 0,
+						"zoom_level": 1
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 5,
+					"file": "/C/Users/shivam/Documents/Projects/aeries-mobile/templates/gradebook.html",
+					"settings":
+					{
+						"buffer_size": 310,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								174,
+								174
+							]
+						],
+						"settings":
+						{
+							"incomplete_sync": null,
+							"syntax": "Packages/HTML/HTML.tmLanguage"
+						},
+						"translation.x": 0,
+						"translation.y": 0,
+						"zoom_level": 1
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 6,
+					"file": "/C/Users/shivam/Documents/Projects/aeries-mobile/templates/login.html",
+					"settings":
+					{
+						"buffer_size": 353,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								0,
+								353
+							]
+						],
+						"settings":
+						{
+							"incomplete_sync": null,
+							"syntax": "Packages/Djaneiro/Syntaxes/HTML (Django).tmLanguage"
+						},
+						"translation.x": 0,
+						"translation.y": 0,
+						"zoom_level": 1
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 7,
+					"file": "/C/Users/shivam/Documents/Projects/aeries-mobile/login.py",
+					"settings":
+					{
+						"buffer_size": 529,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								529,
+								529
+							]
+						],
+						"settings":
+						{
+							"incomplete_sync": null,
+							"syntax": "Packages/Djaneiro/Syntaxes/Python Django.tmLanguage"
+						},
+						"translation.x": 0,
+						"translation.y": 0,
+						"zoom_level": 1
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 8,
+					"file": "/C/Users/shivam/Documents/Projects/aeries-mobile/run_tests.py",
+					"settings":
+					{
+						"buffer_size": 69,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								69,
+								69
+							]
+						],
+						"settings":
+						{
+							"incomplete_sync": null,
+							"syntax": "Packages/Djaneiro/Syntaxes/Python Django.tmLanguage"
+						},
+						"translation.x": 0,
+						"translation.y": 0,
+						"zoom_level": 1
+					},
+					"type": "text"
+				}
+			]
+		}
+	],
+	"incremental_find":
+	{
+		"height": 32
+	},
+	"input":
+	{
+		"height": 0
+	},
+	"layout":
+	{
+		"cells":
+		[
+			[
+				0,
+				0,
+				1,
+				1
+			]
+		],
+		"cols":
+		[
+			0,
+			1
+		],
+		"rows":
+		[
+			0,
+			1
+		]
+	},
+	"menu_visible": true,
+	"output.sftp":
+	{
+		"height": 24
+	},
+	"replace":
+	{
+		"height": 60
+	},
+	"save_all_on_build": true,
+	"select_file":
+	{
+		"height": 0,
+		"selected_items":
+		[
+			[
+				"lws.",
+				"scripts/lws.py"
+			]
+		],
+		"width": 0
+	},
+	"select_project":
+	{
+		"height": 500,
+		"selected_items":
+		[
+		],
+		"width": 380
+	},
+	"show_minimap": true,
+	"show_open_files": true,
+	"show_tabs": true,
+	"side_bar_visible": true,
+	"side_bar_width": 143,
+	"status_bar_visible": true
+}

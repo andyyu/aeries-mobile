@@ -46,23 +46,30 @@ class AeriesAPI:
 		return periods
 
 
-	def getPeriodAssignments(url):
+	def getPeriodAssignments(self,url):
 		html=self.__getPageHTML(url)
 		soup=BeautifulSoup(html)
 		assignments = []
-		rows = soup.find_all("tr", "NormalClickableRowEven")
-		rows.append(soup.find_all("tr", "NormalClickableRow"))
-		for anyrow in rows:
-			if anyrow.contents[0].text==null:
-				rows.remove(anyrow)
+		rows = soup.find_all("tr", "NormalRowEven")
+		odds=soup.find_all("tr", "NormalRow")
+		for i in odds:
+			rows.append(i)
+		rows=[anyrow for anyrow in rows if anyrow.contents[0].text.encode('ascii','ignore')!=""]
+		#basically it's like
+		#NormalRowEven (id: Row2 let's say)
+		#--NormalRowEven (id: Row2b)
+		#----NormalRowEven (id: Row2d)
+		#----NormalRowEven (id: Row2f)
+		#
+		#so above, when you removed the one with the blank first cell, it only removed the row with the id: Row2b. Basically, 
+		#look through the documentation and try to find a way to also remove all the children elements of Row2b.
 		for assignment in rows:
-			assignmentsoup = BeautifulSoup(assignment)
 			assignmentinfo = {}
 			assignmentinfo["name"] = (assignment.contents[1].text.encode('ascii','ignore'))
 			assignmentinfo["type"] = (assignment.contents[2].text.encode('ascii','ignore'))
-			assignmentinfo["score"] = assignmentsoup('td').elements[4]('input')[0]['value']
-			assignmentinfo["maxscore"] = assignmentsoup('td').elements[5]('div')[0].text
-			assignmentinfo["percent"] = (score/maxscore)*100
+			assignmentinfo["score"] = int(assignment.contents[4].text.encode('ascii','ignore'))
+			assignmentinfo["maxscore"] = int(assignment.contents[5].text.encode('ascii','ignore'))
+			assignmentinfo["percent"] = float(assignmentinfo["score"]/assignmentinfo["maxscore"])*100
 			assignments.append(assignmentinfo)
 		return assignments
 
