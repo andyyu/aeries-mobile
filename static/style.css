@@ -1,0 +1,22 @@
+#login_form, #login_form input{
+	width: 100%;
+}
+
+
+#period_list, #period_list li, #period_list li a{
+	width: 100%;
+}
+#period_list{
+	list-style-type: none;
+	margin: 0px;
+}
+#period_list li{
+	height: 40px;
+	margin-top: 1px;
+}
+.even_period{
+	background: #ddd;
+}
+.odd_period{
+	background: #fff;
+}
