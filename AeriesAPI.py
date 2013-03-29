@@ -52,28 +52,18 @@ class AeriesAPI:
 		assignments = []
 		rows = soup.find_all("tr", "NormalRowEven")
 		odds=soup.find_all("tr", "NormalRow")
-		realrows = []
 		for i in odds:
 			rows.append(i)
-		for anyrow in rows:
-			if anyrow.contents[1].text.encode('ascii','ignore')!="...":
-				realrows.append(anyrow)
-		# rows=[anyrow for anyrow in rows if anyrow.contents[1].text.encode('ascii','ignore')!="..."]
-		#basically it's like
-		#NormalRowEven (id: Row2 let's say)
-		#--NormalRowEven (id: Row2b)
-		#----NormalRowEven (id: Row2d)
-		#----NormalRowEven (id: Row2f)
-		#
-		#so above, when you removed the one with the blank first cell, it only removed the row with the id: Row2b. Basically, 
-		#look through the documentation and try to find a way to also remove all the children elements of Row2b.
-		for assignment in realrows:
+		print rows[0].contents[0].text.encode('ascii','ignore')=="4"
+		print rows[0].find("td", {"align" : "center"})!= None 
+		rows=[anyrow for anyrow in rows if (anyrow.find("td", {"align" : "center"})!= None  and anyrow.contents[0].text.encode('ascii','ignore').isdigit())]
+		for assignment in rows:
 			assignmentinfo = {}
 			assignmentinfo["name"] = (assignment.contents[1].text.encode('ascii','ignore'))
 			assignmentinfo["type"] = (assignment.contents[2].text.encode('ascii','ignore'))
 			assignmentinfo["score"] = int(assignment.contents[4].text.encode('ascii','ignore'))
 			assignmentinfo["maxscore"] = int(assignment.contents[5].text.encode('ascii','ignore'))
-			assignmentinfo["percent"] = float(assignmentinfo["score"]/assignmentinfo["maxscore"])*100
+			#assignmentinfo["percent"] = float(assignmentinfo["score"]/assignmentinfo["maxscore"])*100
 			assignments.append(assignmentinfo)
 		return assignments
 
