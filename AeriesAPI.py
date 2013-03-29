@@ -54,8 +54,6 @@ class AeriesAPI:
 		odds=soup.find_all("tr", "NormalRow")
 		for i in odds:
 			rows.append(i)
-		print rows[0].contents[0].text.encode('ascii','ignore')=="4"
-		print rows[0].find("td", {"align" : "center"})!= None 
 		rows=[anyrow for anyrow in rows if (anyrow.find("td", {"align" : "center"})!= None  and anyrow.contents[0].text.encode('ascii','ignore').isdigit())]
 		for assignment in rows:
 			assignmentinfo = {}
@@ -63,7 +61,10 @@ class AeriesAPI:
 			assignmentinfo["type"] = (assignment.contents[2].text.encode('ascii','ignore'))
 			assignmentinfo["score"] = int(assignment.contents[4].text.encode('ascii','ignore'))
 			assignmentinfo["maxscore"] = int(assignment.contents[5].text.encode('ascii','ignore'))
-			#assignmentinfo["percent"] = float(assignmentinfo["score"]/assignmentinfo["maxscore"])*100
+			if assignmentinfo["maxscore"] != 0:
+				assignmentinfo["percent"] = ('%.2f' % ((float (assignmentinfo["score"])/ float (assignmentinfo["maxscore"]))*100)) + "%"
+			else:
+				assignmentinfo["percent"] = 100
 			assignments.append(assignmentinfo)
 		return assignments
 
