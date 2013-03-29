@@ -1,6 +1,6 @@
 <html>
 <head>
-<title>Gradebook | Aeries Mobile</title>	
+<title>Class | Aeries Mobile</title>	
 	<link href="{{ url_for('static', filename='style.css') }}" rel="stylesheet" media="screen">
     <!-- Bootstrap -->
     <link href="{{ url_for('static', filename='bootstrap/css/bootstrap.min.css') }}" rel="stylesheet" media="screen">
@@ -9,18 +9,26 @@
 		<div class="container-fluid">
 			<div class= "row-fluid">
 				<div class="span12">
-					<h2>Classes</h2>
+					<h2>Class _</h2>
 				</div>
 			</div>
 			<div class= "row-fluid">
-				<ul id= "period_list">
-					{% for period in periods %}
-						<li class="{{loop.cycle('even', 'odd')}}_period">
-						<a href="{{ url_for('period', class_id=period.class_id) }}">{{period.name}}</a>
-						<span class= "period_percent">{{period.percentgrade}}</span>
-						</li>
+				<table class="table table-bordered">
+					<thead>
+						<tr>
+							<td>Name</td>
+							<td>Type</td>
+							<td>Score</td>
+							<td>Percent</td>
+						</tr>
+					{% for assignment in assignments %}
+						<tr>
+							<td>{{assignment.name}}</td>
+							<td>{{assignment.type}}</td>
+							<td>{{assignment.score}}/{{assignment.maxscore}}</td>
+							<td>{{assignment.percent}}</td>
 					{% endfor %}
-				</ul>
+				</table>
 			</div>
 			
 		</div>

@@ -46,7 +46,8 @@ class AeriesAPI:
 		return periods
 
 
-	def getPeriodAssignments(self,url):
+	def getPeriodAssignments(self,id):
+		url="https://mystudent.fjuhsd.net/GradebookStuScores.asp?cache=3%2F28%2F2013+11%3A49%3A05+PM&GrdBk="+id
 		html=self.__getPageHTML(url)
 		soup=BeautifulSoup(html)
 		assignments = []
