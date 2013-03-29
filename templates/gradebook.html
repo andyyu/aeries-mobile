@@ -1,0 +1,31 @@
+<html>
+<head>
+<title>Gradebook | Aeries Mobile</title>	
+	<link href="{{ url_for('static', filename='style.css') }}" rel="stylesheet" media="screen">
+    <!-- Bootstrap -->
+    <link href="{{ url_for('static', filename='bootstrap/css/bootstrap.min.css') }}" rel="stylesheet" media="screen">
+</head>
+<body>
+		<div class="container-fluid">
+			<div class= "row-fluid">
+				<div class="span12">
+					<h2>Classes</h2>
+				</div>
+			</div>
+			<div class= "row-fluid">
+				<ul id= "period_list">
+					{% for period in periods %}
+						<li class="{{loop.cycle('even', 'odd')}}_period">
+						<a href="http://mystudent.fjuhsd.net/{{period.full_url}}">{{period.name}}</a>
+						<span class= "period_percent">{{period.percentgrade}}</span>
+						</li>
+					{% endfor %}
+				</ul>
+			</div>
+			
+		</div>
+
+	<script src="http://code.jquery.com/jquery.js"></script>
+    <script src="{{ url_for('static',filename='bootstrap/js/bootstrap.min.js') }}"></script>
+</body>
+</html>
