@@ -52,9 +52,13 @@ class AeriesAPI:
 		assignments = []
 		rows = soup.find_all("tr", "NormalRowEven")
 		odds=soup.find_all("tr", "NormalRow")
+		realrows = []
 		for i in odds:
 			rows.append(i)
-		rows=[anyrow for anyrow in rows if anyrow.contents[0].text.encode('ascii','ignore')!=""]
+		for anyrow in rows:
+			if anyrow.contents[1].text.encode('ascii','ignore')!="...":
+				realrows.append(anyrow)
+		# rows=[anyrow for anyrow in rows if anyrow.contents[1].text.encode('ascii','ignore')!="..."]
 		#basically it's like
 		#NormalRowEven (id: Row2 let's say)
 		#--NormalRowEven (id: Row2b)
@@ -63,7 +67,7 @@ class AeriesAPI:
 		#
 		#so above, when you removed the one with the blank first cell, it only removed the row with the id: Row2b. Basically, 
 		#look through the documentation and try to find a way to also remove all the children elements of Row2b.
-		for assignment in rows:
+		for assignment in realrows:
 			assignmentinfo = {}
 			assignmentinfo["name"] = (assignment.contents[1].text.encode('ascii','ignore'))
 			assignmentinfo["type"] = (assignment.contents[2].text.encode('ascii','ignore'))
