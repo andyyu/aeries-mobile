@@ -1,13 +1,27 @@
 <html>
 <head>
-	<title>Login | Aeries Mobile</title>
+<title>Login | Aeries Mobile</title>
+	<link href="{{ url_for('static', filename='style.css') }}" rel="stylesheet" media="screen">
+    <!-- Bootstrap -->
+    <link href="{{ url_for('static', filename='bootstrap/css/bootstrap.min.css') }}" rel="stylesheet" media="screen">
 </head>
 <body>
-	<div id= "login_form">
-		<form method="POST" action="{{ url_for('login')}}">
-			<label>Username:</label><input type= "text" name= "user" /><br>
-			<label>Password:</label><input type= "password" name= "pass" /><br>
-			<input type= "submit" value= "Log in!" />
-		</form>
+		<div class="container-fluid">
+			<div class= "row-fluid">
+				<div class="span12">
+					<h2>Login</h2>
+					<form id= "login_form" method="POST" action="{{ url_for('login')}}">
+						<label>Username:</label><input type= "text" name= "user" /><br>
+						<label>Password:</label><input type= "password" name= "pass" /><br>
+						<input type= "submit" value= "Log in!" class="btn btn-info"/>
+					</form>
+				</div>
+			</div>			
+		</div>
+
+	<script src="http://code.jquery.com/jquery.js"></script>
+    <script src="{{ url_for('static',filename='bootstrap/js/bootstrap.min.js') }}"></script>
 </body>
 </html>
+<html>
+<head>
