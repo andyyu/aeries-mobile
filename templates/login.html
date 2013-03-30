@@ -1,27 +1,30 @@
 <html>
 <head>
-<title>Login | Aeries Mobile</title>
-	<link href="{{ url_for('static', filename='style.css') }}" rel="stylesheet" media="screen">
+	<title>Login | Aeries Mobile</title>
+	<link href="/static/style.css" rel="stylesheet" media="screen">
     <!-- Bootstrap -->
-    <link href="{{ url_for('static', filename='bootstrap/css/bootstrap.min.css') }}" rel="stylesheet" media="screen">
-</head>
+    <link href="/static/bootstrap/css/bootstrap.min.css" rel="stylesheet" media="screen">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+<style type="text/css"></style><style type="text/css"></style></head>
 <body>
-		<div class="container-fluid">
-			<div class= "row-fluid">
-				<div class="span12">
-					<h2>Login</h2>
-					<form id= "login_form" method="POST" action="{{ url_for('login')}}">
-						<label>Username:</label><input type= "text" name= "user" /><br>
-						<label>Password:</label><input type= "password" name= "pass" /><br>
-						<input type= "submit" value= "Log in!" class="btn btn-info"/>
-					</form>
+		<div class="header">
+			<div id="black-bar"></div>
+			<div id="logo-bar">Aeries Mobile</div>
+		</div>
+		<div class="content-fluid">
+			<div class="row-fluid">
+				<div id="login-box">
+					<h4>Login to your Aeries Account</h4>
+					<form id="login_form" method="POST" action="/login">
+						<input type="text" name="user" placeholder="Email Address"><br>
+						<input type="password" name="pass" placeholder="Password"><br>
+						<input type="submit" value="Log in!" class="btn btn-info">
+					</form>			
 				</div>
-			</div>			
+			</div>
 		</div>
 
 	<script src="http://code.jquery.com/jquery.js"></script>
-    <script src="{{ url_for('static',filename='bootstrap/js/bootstrap.min.js') }}"></script>
+    <script src="/static/bootstrap/js/bootstrap.min.js"></script>
 </body>
 </html>
-<html>
-<head>

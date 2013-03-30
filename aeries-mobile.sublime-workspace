@@ -4,6 +4,14 @@
 		"selected_items":
 		[
 			[
+				"none",
+				"none"
+			],
+			[
+				"assign",
+				"assignments"
+			],
+			[
 				"list",
 				"list: list-style-type: other"
 			],
@@ -43,7 +51,7 @@
 			"file": "/C/Users/shivam/Documents/Projects/aeries-mobile/Student.py",
 			"settings":
 			{
-				"buffer_size": 284,
+				"buffer_size": 663,
 				"line_ending": "Windows"
 			}
 		},
@@ -51,7 +59,7 @@
 			"file": "/C/Users/shivam/Documents/Projects/aeries-mobile/AeriesAPI.py",
 			"settings":
 			{
-				"buffer_size": 3087,
+				"buffer_size": 3189,
 				"line_ending": "Windows"
 			}
 		},
@@ -59,7 +67,7 @@
 			"file": "/C/Users/shivam/Documents/Projects/aeries-mobile/hello.py",
 			"settings":
 			{
-				"buffer_size": 808,
+				"buffer_size": 1146,
 				"line_ending": "Windows"
 			}
 		},
@@ -67,7 +75,7 @@
 			"file": "/C/Users/shivam/Documents/Projects/aeries-mobile/templates/class.html",
 			"settings":
 			{
-				"buffer_size": 1067,
+				"buffer_size": 1290,
 				"line_ending": "Windows"
 			}
 		},
@@ -75,7 +83,7 @@
 			"file": "/C/Users/shivam/Documents/Projects/aeries-mobile/templates/gradebook.html",
 			"settings":
 			{
-				"buffer_size": 960,
+				"buffer_size": 1033,
 				"line_ending": "Windows"
 			}
 		},
@@ -83,7 +91,7 @@
 			"file": "/C/Users/shivam/Documents/Projects/aeries-mobile/templates/login.html",
 			"settings":
 			{
-				"buffer_size": 918,
+				"buffer_size": 1057,
 				"line_ending": "Windows"
 			}
 		},
@@ -91,7 +99,7 @@
 			"file": "/C/Users/shivam/Documents/Projects/aeries-mobile/static/style.css",
 			"settings":
 			{
-				"buffer_size": 290,
+				"buffer_size": 872,
 				"line_ending": "Windows"
 			}
 		},
@@ -108,6 +116,14 @@
 			"settings":
 			{
 				"buffer_size": 69,
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "/C/Users/shivam/Documents/Projects/aeries-mobile/tests/AeriesAPITester.py",
+			"settings":
+			{
+				"buffer_size": 290,
 				"line_ending": "Windows"
 			}
 		}
@@ -220,6 +236,7 @@
 	},
 	"file_history":
 	[
+		"/C/Users/shivam/AppData/Roaming/Sublime Text 2/Packages/Default/Default (Windows).sublime-keymap",
 		"/C/Users/shivam/Documents/Projects/aeries-mobile/AeriesAPI.py",
 		"/C/Users/shivam/Documents/Projects/aeries-mobile/tests/AeriesAPITester.py",
 		"/C/Users/shivam/Documents/Projects/aeries-mobile/templates/login.html",
@@ -227,7 +244,6 @@
 		"/C/Users/shivam/Documents/Projects/aeriesmobile_apibackup.py",
 		"/C/xampp/htdocs/h5bp-mobile-boilerplate-eb25172/index.html",
 		"/C/Users/shivam/Downloads/h5bp-mobile-boilerplate-v4.1.0-0-gb005c95/h5bp-mobile-boilerplate-eb25172/index.html",
-		"/C/Users/shivam/AppData/Roaming/Sublime Text 2/Packages/Default/Default (Windows).sublime-keymap",
 		"/C/Users/shivam/Documents/Projects/aeries-mobile/tests/__init__.py",
 		"/C/Users/shivam/Documents/Projects/aeries-mobile/tests/AeriesAPITester",
 		"/C/Users/shivam/Documents/Projects/aeries-mobile/parser.py",
@@ -481,9 +497,10 @@
 		"highlight": true,
 		"in_selection": false,
 		"preserve_case": false,
-		"regex": true,
+		"regex": false,
 		"replace_history":
 		[
+			"Score",
 			",\\n",
 			"",
 			"\"",
@@ -503,7 +520,7 @@
 			"",
 			"max_length"
 		],
-		"reverse": false,
+		"reverse": true,
 		"show_context": true,
 		"use_buffer": true,
 		"whole_word": false,
@@ -512,7 +529,7 @@
 	"groups":
 	[
 		{
-			"selected": 2,
+			"selected": 6,
 			"sheets":
 			[
 				{
@@ -520,15 +537,15 @@
 					"file": "/C/Users/shivam/Documents/Projects/aeries-mobile/Student.py",
 					"settings":
 					{
-						"buffer_size": 284,
+						"buffer_size": 663,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								284,
-								284
+								502,
+								502
 							]
 						],
 						"settings":
@@ -547,15 +564,15 @@
 					"file": "/C/Users/shivam/Documents/Projects/aeries-mobile/AeriesAPI.py",
 					"settings":
 					{
-						"buffer_size": 3087,
+						"buffer_size": 3189,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								2436,
-								2436
+								2140,
+								867
 							]
 						],
 						"settings":
@@ -564,7 +581,7 @@
 							"syntax": "Packages/Djaneiro/Syntaxes/Python Django.tmLanguage"
 						},
 						"translation.x": 0,
-						"translation.y": 664,
+						"translation.y": 496,
 						"zoom_level": 1
 					},
 					"type": "text"
@@ -574,15 +591,15 @@
 					"file": "/C/Users/shivam/Documents/Projects/aeries-mobile/hello.py",
 					"settings":
 					{
-						"buffer_size": 808,
+						"buffer_size": 1146,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								628,
-								628
+								1038,
+								1038
 							]
 						],
 						"settings":
@@ -591,7 +608,7 @@
 							"syntax": "Packages/Djaneiro/Syntaxes/Python Django.tmLanguage"
 						},
 						"translation.x": 0,
-						"translation.y": 0,
+						"translation.y": 222,
 						"zoom_level": 1
 					},
 					"type": "text"
@@ -601,15 +618,15 @@
 					"file": "/C/Users/shivam/Documents/Projects/aeries-mobile/templates/class.html",
 					"settings":
 					{
-						"buffer_size": 1067,
+						"buffer_size": 1290,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								838,
-								838
+								533,
+								533
 							]
 						],
 						"settings":
@@ -618,7 +635,7 @@
 							"syntax": "Packages/HTML/HTML.tmLanguage"
 						},
 						"translation.x": 0,
-						"translation.y": 0,
+						"translation.y": 46,
 						"zoom_level": 1
 					},
 					"type": "text"
@@ -628,15 +645,15 @@
 					"file": "/C/Users/shivam/Documents/Projects/aeries-mobile/templates/gradebook.html",
 					"settings":
 					{
-						"buffer_size": 960,
+						"buffer_size": 1033,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								639,
-								639
+								362,
+								294
 							]
 						],
 						"settings":
@@ -655,15 +672,15 @@
 					"file": "/C/Users/shivam/Documents/Projects/aeries-mobile/templates/login.html",
 					"settings":
 					{
-						"buffer_size": 918,
+						"buffer_size": 1057,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								688,
-								688
+								1050,
+								1050
 							]
 						],
 						"settings":
@@ -682,15 +699,15 @@
 					"file": "/C/Users/shivam/Documents/Projects/aeries-mobile/static/style.css",
 					"settings":
 					{
-						"buffer_size": 290,
+						"buffer_size": 872,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								227,
-								227
+								34,
+								34
 							]
 						],
 						"settings":
@@ -743,8 +760,35 @@
 						"selection":
 						[
 							[
-								39,
-								0
+								69,
+								69
+							]
+						],
+						"settings":
+						{
+							"incomplete_sync": null,
+							"syntax": "Packages/Djaneiro/Syntaxes/Python Django.tmLanguage"
+						},
+						"translation.x": 0,
+						"translation.y": 0,
+						"zoom_level": 1
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 9,
+					"file": "/C/Users/shivam/Documents/Projects/aeries-mobile/tests/AeriesAPITester.py",
+					"settings":
+					{
+						"buffer_size": 290,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								261,
+								261
 							]
 						],
 						"settings":
