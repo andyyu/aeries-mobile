@@ -67,6 +67,7 @@ class AeriesAPI:
 			else:
 				assignmentinfo["percent"] = "100%"
 			assignments.append(assignmentinfo)
+		assignments=sorted(assignments, key=lambda assignment: assignment["name"])
 		return assignments
 
 
