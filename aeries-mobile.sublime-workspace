@@ -67,7 +67,7 @@
 			"file": "/C/Users/shivam/Documents/Projects/aeries-mobile/hello.py",
 			"settings":
 			{
-				"buffer_size": 1146,
+				"buffer_size": 1217,
 				"line_ending": "Windows"
 			}
 		},
@@ -529,7 +529,7 @@
 	"groups":
 	[
 		{
-			"selected": 6,
+			"selected": 2,
 			"sheets":
 			[
 				{
@@ -591,15 +591,15 @@
 					"file": "/C/Users/shivam/Documents/Projects/aeries-mobile/hello.py",
 					"settings":
 					{
-						"buffer_size": 1146,
+						"buffer_size": 1217,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								1038,
-								1038
+								1213,
+								1213
 							]
 						],
 						"settings":
@@ -608,7 +608,7 @@
 							"syntax": "Packages/Djaneiro/Syntaxes/Python Django.tmLanguage"
 						},
 						"translation.x": 0,
-						"translation.y": 222,
+						"translation.y": 72,
 						"zoom_level": 1
 					},
 					"type": "text"
