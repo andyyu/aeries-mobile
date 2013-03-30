@@ -26,9 +26,6 @@ def login():
 		student=Student.Student(user,pw)
 		session["user"]=user
 		session["pw"]=pw
-		#session["all_assignments"]=student.loadAllPeriodAssignments()
-		#session.modified=True
-		#print session
 		return render_template('gradebook.html', user=user, pw=pw, periods=student.periods)
 
 @app.route('/class/<class_id>')
@@ -39,11 +36,6 @@ def period(class_id):
 		if(period["class_id"]==class_id):
 			period_name=period["name"]
 	assignments=student.aeries.getPeriodAssignments(class_id)
-	#for period in session["all_assignments"]:
-	#	if period["id"]==class_id:
-	#		assignments=period["assignments"]
-	#		period_name=period["name"]
-	#print assignments
 	return render_template('class.html', assignments=assignments, period_name=period_name)
 
 if __name__ == '__main__':
