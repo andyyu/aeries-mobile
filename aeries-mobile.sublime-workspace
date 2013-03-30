@@ -4,6 +4,10 @@
 		"selected_items":
 		[
 			[
+				"list",
+				"list: list-style-type: other"
+			],
+			[
 				"gradebookHTM",
 				"gradebookHTML"
 			],
@@ -47,23 +51,7 @@
 			"file": "/C/Users/shivam/Documents/Projects/aeries-mobile/AeriesAPI.py",
 			"settings":
 			{
-				"buffer_size": 2780,
-				"line_ending": "Windows"
-			}
-		},
-		{
-			"file": "/C/Users/shivam/Documents/Projects/aeries-mobile/tests/AeriesAPITester.py",
-			"settings":
-			{
-				"buffer_size": 370,
-				"line_ending": "Windows"
-			}
-		},
-		{
-			"file": "/C/Users/shivam/AppData/Roaming/Sublime Text 2/Packages/Default/Default (Windows).sublime-keymap",
-			"settings":
-			{
-				"buffer_size": 30029,
+				"buffer_size": 3087,
 				"line_ending": "Windows"
 			}
 		},
@@ -71,7 +59,15 @@
 			"file": "/C/Users/shivam/Documents/Projects/aeries-mobile/hello.py",
 			"settings":
 			{
-				"buffer_size": 630,
+				"buffer_size": 808,
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "/C/Users/shivam/Documents/Projects/aeries-mobile/templates/class.html",
+			"settings":
+			{
+				"buffer_size": 1067,
 				"line_ending": "Windows"
 			}
 		},
@@ -79,7 +75,7 @@
 			"file": "/C/Users/shivam/Documents/Projects/aeries-mobile/templates/gradebook.html",
 			"settings":
 			{
-				"buffer_size": 310,
+				"buffer_size": 960,
 				"line_ending": "Windows"
 			}
 		},
@@ -87,7 +83,15 @@
 			"file": "/C/Users/shivam/Documents/Projects/aeries-mobile/templates/login.html",
 			"settings":
 			{
-				"buffer_size": 353,
+				"buffer_size": 918,
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "/C/Users/shivam/Documents/Projects/aeries-mobile/static/style.css",
+			"settings":
+			{
+				"buffer_size": 290,
 				"line_ending": "Windows"
 			}
 		},
@@ -216,6 +220,14 @@
 	},
 	"file_history":
 	[
+		"/C/Users/shivam/Documents/Projects/aeries-mobile/AeriesAPI.py",
+		"/C/Users/shivam/Documents/Projects/aeries-mobile/tests/AeriesAPITester.py",
+		"/C/Users/shivam/Documents/Projects/aeries-mobile/templates/login.html",
+		"/C/Users/shivam/Documents/Projects/aeries-mobile/Procfile",
+		"/C/Users/shivam/Documents/Projects/aeriesmobile_apibackup.py",
+		"/C/xampp/htdocs/h5bp-mobile-boilerplate-eb25172/index.html",
+		"/C/Users/shivam/Downloads/h5bp-mobile-boilerplate-v4.1.0-0-gb005c95/h5bp-mobile-boilerplate-eb25172/index.html",
+		"/C/Users/shivam/AppData/Roaming/Sublime Text 2/Packages/Default/Default (Windows).sublime-keymap",
 		"/C/Users/shivam/Documents/Projects/aeries-mobile/tests/__init__.py",
 		"/C/Users/shivam/Documents/Projects/aeries-mobile/tests/AeriesAPITester",
 		"/C/Users/shivam/Documents/Projects/aeries-mobile/parser.py",
@@ -232,7 +244,6 @@
 		"/C/Users/shivam/Documents/python/quora challenges/feedoptimizer.py",
 		"/C/Users/shivam/DOCUME~1/Projects/FIRSTK~1/average_rate_of_change.html",
 		"/C/Users/shivam/AppData/Roaming/Sublime Text 2/Packages/User/Default (Windows).sublime-keymap",
-		"/C/Users/shivam/AppData/Roaming/Sublime Text 2/Packages/Default/Default (Windows).sublime-keymap",
 		"/C/Users/shivam/Documents/Projects/sat flashcards/site/index.html",
 		"/C/Users/shivam/Documents/school/2012-13/2_compsci/SAT-Vocab-Chrome-Extension/README.md",
 		"/C/Users/shivam/Documents/Django/tunetype/templates/tunetype/index.html",
@@ -336,14 +347,7 @@
 		"/C/Users/shivam/Documents/Django/tunetype/tunetype/views.py",
 		"/C/Users/shivam/Documents/Django/tunetype/lyriccheck/views.py",
 		"/C/Users/shivam/Documents/Django/tunetype/lyriccheck/static/css/bootstrap.css",
-		"/C/Users/shivam/Documents/Django/tunetype/manage.py",
-		"/C/Users/shivam/Documents/Django/tunetype/lyriccheck/urls.py",
-		"/C/Python27/Lib/disutils/msvc9compiler.py",
-		"/C/Python27/Lib/distutils/msvccompiler.py",
-		"/C/Users/shivam/Documents/Django/tunetype/procfile",
-		"/C/Users/shivam/Documents/Django/tunetype/lyriccheck/static/js/strcmp.js",
-		"/E/School/1_eng/houseofmirthpassage/essay.tex",
-		"/E/School/4_philo/texexample/texexample.tex"
+		"/C/Users/shivam/Documents/Django/tunetype/manage.py"
 	],
 	"find":
 	{
@@ -370,6 +374,7 @@
 		"case_sensitive": true,
 		"find_history":
 		[
+			",",
 			"[0-9]+\\.\\s",
 			"\\[0-9]+.",
 			"[0-9]+.\\s",
@@ -479,6 +484,7 @@
 		"regex": true,
 		"replace_history":
 		[
+			",\\n",
 			"",
 			"\"",
 			"\\\\&",
@@ -541,15 +547,15 @@
 					"file": "/C/Users/shivam/Documents/Projects/aeries-mobile/AeriesAPI.py",
 					"settings":
 					{
-						"buffer_size": 2780,
+						"buffer_size": 3087,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								1819,
-								1819
+								2436,
+								2436
 							]
 						],
 						"settings":
@@ -558,25 +564,25 @@
 							"syntax": "Packages/Djaneiro/Syntaxes/Python Django.tmLanguage"
 						},
 						"translation.x": 0,
-						"translation.y": 584,
+						"translation.y": 664,
 						"zoom_level": 1
 					},
 					"type": "text"
 				},
 				{
 					"buffer": 2,
-					"file": "/C/Users/shivam/Documents/Projects/aeries-mobile/tests/AeriesAPITester.py",
+					"file": "/C/Users/shivam/Documents/Projects/aeries-mobile/hello.py",
 					"settings":
 					{
-						"buffer_size": 370,
+						"buffer_size": 808,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								103,
-								103
+								628,
+								628
 							]
 						],
 						"settings":
@@ -592,72 +598,18 @@
 				},
 				{
 					"buffer": 3,
-					"file": "/C/Users/shivam/AppData/Roaming/Sublime Text 2/Packages/Default/Default (Windows).sublime-keymap",
+					"file": "/C/Users/shivam/Documents/Projects/aeries-mobile/templates/class.html",
 					"settings":
 					{
-						"buffer_size": 30029,
+						"buffer_size": 1067,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								11588,
-								11588
-							]
-						],
-						"settings":
-						{
-							"incomplete_sync": null,
-							"syntax": "Packages/JavaScript/JSON.tmLanguage"
-						},
-						"translation.x": 0,
-						"translation.y": 3519,
-						"zoom_level": 1
-					},
-					"type": "text"
-				},
-				{
-					"buffer": 4,
-					"file": "/C/Users/shivam/Documents/Projects/aeries-mobile/hello.py",
-					"settings":
-					{
-						"buffer_size": 630,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								630,
-								630
-							]
-						],
-						"settings":
-						{
-							"incomplete_sync": null,
-							"syntax": "Packages/Djaneiro/Syntaxes/Python Django.tmLanguage"
-						},
-						"translation.x": 0,
-						"translation.y": 0,
-						"zoom_level": 1
-					},
-					"type": "text"
-				},
-				{
-					"buffer": 5,
-					"file": "/C/Users/shivam/Documents/Projects/aeries-mobile/templates/gradebook.html",
-					"settings":
-					{
-						"buffer_size": 310,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								174,
-								174
+								838,
+								838
 							]
 						],
 						"settings":
@@ -672,25 +624,79 @@
 					"type": "text"
 				},
 				{
-					"buffer": 6,
-					"file": "/C/Users/shivam/Documents/Projects/aeries-mobile/templates/login.html",
+					"buffer": 4,
+					"file": "/C/Users/shivam/Documents/Projects/aeries-mobile/templates/gradebook.html",
 					"settings":
 					{
-						"buffer_size": 353,
+						"buffer_size": 960,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								0,
-								353
+								639,
+								639
+							]
+						],
+						"settings":
+						{
+							"incomplete_sync": null,
+							"syntax": "Packages/HTML/HTML.tmLanguage"
+						},
+						"translation.x": 0,
+						"translation.y": 0,
+						"zoom_level": 1
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 5,
+					"file": "/C/Users/shivam/Documents/Projects/aeries-mobile/templates/login.html",
+					"settings":
+					{
+						"buffer_size": 918,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								688,
+								688
 							]
 						],
 						"settings":
 						{
 							"incomplete_sync": null,
 							"syntax": "Packages/Djaneiro/Syntaxes/HTML (Django).tmLanguage"
+						},
+						"translation.x": 0,
+						"translation.y": 0,
+						"zoom_level": 1
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 6,
+					"file": "/C/Users/shivam/Documents/Projects/aeries-mobile/static/style.css",
+					"settings":
+					{
+						"buffer_size": 290,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								227,
+								227
+							]
+						],
+						"settings":
+						{
+							"incomplete_sync": null,
+							"syntax": "Packages/CSS/CSS.tmLanguage"
 						},
 						"translation.x": 0,
 						"translation.y": 0,
@@ -737,8 +743,8 @@
 						"selection":
 						[
 							[
-								69,
-								69
+								39,
+								0
 							]
 						],
 						"settings":

@@ -9,7 +9,6 @@ class AeriesAPI:
 	def __init__(self,username,password):
 		self.user=username
 		self.pw=password
-		self.login()
 	def login(self):
 		payload = {
 		    'UserName': self.user,
@@ -60,12 +59,13 @@ class AeriesAPI:
 			assignmentinfo = {}
 			assignmentinfo["name"] = (assignment.contents[1].text.encode('ascii','ignore'))
 			assignmentinfo["type"] = (assignment.contents[2].text.encode('ascii','ignore'))
-			assignmentinfo["score"] = int(assignment.contents[4].text.encode('ascii','ignore'))
+			score=assignment.contents[4].text.encode('ascii','ignore')
+			assignmentinfo["score"] = 0 if score=="[]" else int(score)
 			assignmentinfo["maxscore"] = int(assignment.contents[5].text.encode('ascii','ignore'))
 			if assignmentinfo["maxscore"] != 0:
 				assignmentinfo["percent"] = ('%.2f' % ((float (assignmentinfo["score"])/ float (assignmentinfo["maxscore"]))*100)) + "%"
 			else:
-				assignmentinfo["percent"] = 100
+				assignmentinfo["percent"] = "100%"
 			assignments.append(assignmentinfo)
 		return assignments
 
