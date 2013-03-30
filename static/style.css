@@ -20,3 +20,7 @@
 .odd_period{
 	background: #fff;
 }
+
+#assignments-table{
+	border-collapse: collapse;
+}

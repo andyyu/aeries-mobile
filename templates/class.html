@@ -13,20 +13,21 @@
 				</div>
 			</div>
 			<div class= "row-fluid">
-				<table class="table table-bordered">
+				<table id= "assignments-table" class="table table-bordered table-condensed table-hover">
 					<thead>
 						<tr>
-							<td>Name</td>
-							<td>Type</td>
-							<td>Score</td>
-							<td>Percent</td>
+							<td><strong>Name</strong></td>
+							<td><strong>Type</strong></td>
+							<td><strong>Score</strong></td>
+							<td><strong>Percent</strong></td>
 						</tr>
+					</thead>
 					{% for assignment in assignments %}
 						<tr>
-							<td>{{assignment.name}}</td>
-							<td>{{assignment.type}}</td>
-							<td>{{assignment.score}}/{{assignment.maxscore}}</td>
-							<td>{{assignment.percent}}</td>
+							<td><small>{{assignment.name}}</small></td>
+							<td><small>{{assignment.type}}</small></td>
+							<td><small>{{assignment.score}}/{{assignment.maxscore}}</small></td>
+							<td><small>{{assignment.percent}}</small></td>
 					{% endfor %}
 				</table>
 			</div>

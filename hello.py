@@ -24,20 +24,26 @@ def login():
 		user=request.form['user']
 		pw=request.form['pass']
 		student=Student.Student(user,pw)
-		session["all_assignments"]=student.loadAllPeriodAssignments()
-		session.modified=True
-		print session
+		session["user"]=user
+		session["pw"]=pw
+		#session["all_assignments"]=student.loadAllPeriodAssignments()
+		#session.modified=True
+		#print session
 		return render_template('gradebook.html', user=user, pw=pw, periods=student.periods)
 
 @app.route('/class/<class_id>')
 def period(class_id):
 	assignments=[]
-	period_name=""
-	for period in session["all_assignments"]:
-		if period["id"]==class_id:
-			assignments=period["assignments"]
+	student=Student.Student(session["user"],session["pw"])
+	for period in student.periods:
+		if(period["class_id"]==class_id):
 			period_name=period["name"]
-	print assignments
+	assignments=student.aeries.getPeriodAssignments(class_id)
+	#for period in session["all_assignments"]:
+	#	if period["id"]==class_id:
+	#		assignments=period["assignments"]
+	#		period_name=period["name"]
+	#print assignments
 	return render_template('class.html', assignments=assignments, period_name=period_name)
 
 if __name__ == '__main__':
