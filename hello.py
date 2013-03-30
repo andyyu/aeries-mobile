@@ -1,3 +1,4 @@
+import os
 from flask import Flask
 from flask import render_template
 from flask import request
@@ -39,5 +40,5 @@ def period(class_id):
 	return render_template('class.html', assignments=assignments, period_name=period_name)
 
 if __name__ == '__main__':
-	app.debug = True
-	app.run()
+	port = int(os.environ.get('PORT', 5000))
+	app.run(host='0.0.0.0', port=port, debug=true)
