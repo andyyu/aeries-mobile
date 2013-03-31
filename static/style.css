@@ -15,6 +15,7 @@ h1,h2,h3,h4,h5,h6{
 	-webkit-margin-end: 0px;
 }
 
+
 #aeries-logo{
 	margin: 0 auto;
 	display: block;
@@ -140,4 +141,14 @@ h1,h2,h3,h4,h5,h6{
 
 #assignments-table{
 	border-collapse: collapse;
+}
+
+.assignment-type{
+	background: white;
+	margin-bottom: 20px;
+	padding: 10px;
+}
+
+.assignment-type h4{
+	margin-bottom: 5px;
 }
