@@ -37,6 +37,18 @@ def period(class_id):
 		if(period["class_id"]==class_id):
 			period_name=period["name"]
 	assignments=student.aeries.getPeriodAssignments(class_id)
+	assignment_types=[]
+	for assignment in assignments:
+		ass_type= assignment["type"]
+		if ass_type not in assignment_types:
+			assignment_types.append(ass_type)
+	new_ass= []
+	for ass_type in assignment_types:
+		new_ass.append({
+			"type": ass_type,
+			"assignments": [ass for ass in assignments if ass["type"]==ass_type]
+		})
+	assignments=new_ass
 	return render_template('class.html', assignments=assignments, period_name=period_name)
 
 if __name__ == '__main__':
