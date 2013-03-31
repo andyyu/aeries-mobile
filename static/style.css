@@ -180,3 +180,15 @@ h1,h2,h3,h4,h5,h6{
 	font-size: 20px;
 	margin-right: 10px;
 }
+
+.modal { 
+    position: fixed; 
+    top: 3%; 
+    right: 3%; 
+    left: 3%; 
+    width: auto; 
+    margin: 0; 
+}
+.modal-body { 
+    height: 60%; 
+}
