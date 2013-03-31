@@ -106,16 +106,36 @@ h1,h2,h3,h4,h5,h6{
 #period_list{
 	list-style-type: none;
 	margin: 0px;
+	overflow: hidden;
 }
 #period_list li{
 	height: 40px;
 	margin-top: 1px;
+	border: 1px solid transparent;
+	margin-bottom: 2px;
 }
 .even_period{
-	background: #ddd;
+	background: rgb(248, 248, 248);
 }
 .odd_period{
 	background: #fff;
+}
+
+#period_list li a {
+    font-weight: 700;
+    left: 5px;
+    top: 10px;
+    position: relative;
+}
+.period_percent {
+    float: right;
+    color: gray;
+    border-left: 1px dashed #E0E0E0;
+    height: 30px;
+    position: relative;
+    right: 10px;
+    padding-top: 10px;
+    padding-left: 10px;
 }
 
 #assignments-table{
