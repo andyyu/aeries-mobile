@@ -85,7 +85,7 @@ h1,h2,h3,h4,h5,h6{
 #logo-bar{
 	width: 100%;
 	height: 40px;
-	background: url(img/nav-tile.png);
+	background: #2385A7;
 }
 
 #logo-bar img{
