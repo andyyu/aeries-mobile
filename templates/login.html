@@ -1,10 +1,12 @@
 <html>
 <head>
 	<title>Login | Aeries Mobile</title>
-	<link href="{{ url_for('static',filename='style.css') }}" rel="stylesheet" media="screen">
+	
     <!-- Bootstrap -->
-    <link href="{{ url_for('static',filename='bootstrap/css/bootstrap.min.css') }}" rel="stylesheet" media="screen">
+    <link href="{{ url_for('static',filename='bootstrap/css/bootstrap.css') }}" rel="stylesheet" media="screen">
     <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <link href="{{ url_for('static',filename='style.css') }}" rel="stylesheet" media="screen">
 <style type="text/css"></style><style type="text/css"></style></head>
 <body>
 		<div class="header">
@@ -18,7 +20,7 @@
 					<form id="login_form" method="POST" action="/login">
 						<input type="text" id="user" name="user" placeholder="Email Address"><br>
 						<input type="password" id="pass" name="pass" placeholder="Password"><br>
-						<input type="submit" id= "submit" value="Log in!" class="btn btn-info">
+						<input type="submit" id= "submit" value="Log in!" class="btn btn-login">
 					</form>			
 				</div>
 			</div>
