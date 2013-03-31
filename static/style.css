@@ -38,6 +38,7 @@ h1,h2,h3,h4,h5,h6{
 
 .content-fluid {
     padding: 0px 5px;
+    padding-bottom: 20px;
 }
 #login_form #user {
     border-bottom: none;  
@@ -87,11 +88,32 @@ h1,h2,h3,h4,h5,h6{
 	width: 100%;
 	height: 40px;
 	background: #2385A7;
+	position: relative;
 }
 
 #logo-bar img{
 	display: block;
 	margin: 0 auto;
+	width: 106px;
+	height: 40px;
+}
+
+#logo-bar .info-button{
+	float: right;
+	position: absolute;
+	right: 10px;
+	top: 10px;
+	cursor: pointer;
+	text-decoration: none;
+}
+
+#logo-bar .info-button i{	
+	font-size: 20px;
+	color: #16586F;
+}
+
+#logo-bar .info-button i:hover{
+	color: white;
 }
 
 #login-box{

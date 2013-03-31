@@ -12,6 +12,7 @@
 		<div class="header">
 			<div id= "logo-bar">
 				<img src="{{ url_for('static',filename='img/nav-logo-2.png') }}" />
+				<a href="#myModal" role="button" class= "info-button" data-toggle="modal"><i class= "icon-info-sign"></i></a>
 			</div>
 		</div>
 		<div class="container-fluid">
@@ -46,6 +47,21 @@
 					
 				</div>
 				{% endfor %}
+			</div>
+
+			<div id="myModal" class="modal hide fade" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+			  <div class="modal-header">
+			    <button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
+			    <h3 id="myModalLabel">Aeries Mobile Interface</h3>
+			  </div>
+			  <div class="modal-body">
+			    <p>Built by <a href="http://shivamthapar.com">Shivam Thapar</a> and <a href= "https://github.com/AndyYu/">Andy Yu</a>.</p>
+			    <p>All code is open-source and can be found on <a href= "https://github.com/AndyYu/aeries-mobile">GitHub</a>.
+
+			  </div>
+			  <div class="modal-footer">
+			    <button class="btn" data-dismiss="modal" aria-hidden="true">Close</button>
+			  </div>
 			</div>
 			
 		</div>

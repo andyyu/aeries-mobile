@@ -3,14 +3,17 @@
 <title>Gradebook | Aeries Mobile</title>		
     <!-- Bootstrap -->
     <link href="{{ url_for('static', filename='bootstrap/css/bootstrap.min.css') }}" rel="stylesheet" media="screen">
+    <link href="{{ url_for('static', filename='fontawesome/css/font-awesome.min.css') }}" rel="stylesheet" media="screen">
     <link href="{{ url_for('static', filename='style.css') }}" rel="stylesheet" media="screen">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable = no">
+    <meta name="apple-mobile-web-app-capable" content="yes" />  
     <link href='http://fonts.googleapis.com/css?family=Droid+Sans' rel='stylesheet' type='text/css'>
 </head>
 <body>
 		<div class="header">
 			<div id= "logo-bar">
 				<img src="{{ url_for('static',filename='img/nav-logo-2.png') }}" />
+				<a href="#myModal" role="button" class= "info-button" data-toggle="modal"><i class= "icon-info-sign"></i></a>
 			</div>
 		</div>
 		<div class="container-fluid">
@@ -28,6 +31,21 @@
 						</li>
 					{% endfor %}
 				</ul>
+			</div>
+
+			<div id="myModal" class="modal hide fade" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+			  <div class="modal-header">
+			    <button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
+			    <h3 id="myModalLabel">Aeries Mobile Interface</h3>
+			  </div>
+			  <div class="modal-body">
+			    <p>Built by <a href="http://shivamthapar.com">Shivam Thapar</a> and <a href= "https://github.com/AndyYu/">Andy Yu</a>.</p>
+			    <p>All code is open-source and can be found on <a href= "https://github.com/AndyYu/aeries-mobile">GitHub</a>.
+
+			  </div>
+			  <div class="modal-footer">
+			    <button class="btn" data-dismiss="modal" aria-hidden="true">Close</button>
+			  </div>
 			</div>
 			
 		</div>
