@@ -1,16 +1,22 @@
 <html>
 <head>
-<title>Gradebook | Aeries Mobile</title>	
-	<link href="{{ url_for('static', filename='style.css') }}" rel="stylesheet" media="screen">
+<title>Gradebook | Aeries Mobile</title>		
     <!-- Bootstrap -->
     <link href="{{ url_for('static', filename='bootstrap/css/bootstrap.min.css') }}" rel="stylesheet" media="screen">
+    <link href="{{ url_for('static', filename='style.css') }}" rel="stylesheet" media="screen">
     <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href='http://fonts.googleapis.com/css?family=Droid+Sans' rel='stylesheet' type='text/css'>
 </head>
 <body>
+		<div class="header">
+			<div id= "logo-bar">
+				<img src="{{ url_for('static',filename='img/nav-logo-2.png') }}" />
+			</div>
+		</div>
 		<div class="container-fluid">
 			<div class= "row-fluid">
 				<div class="span12">
-					<h2>Classes</h2>
+					<h3>My Classes</h3>
 				</div>
 			</div>
 			<div class= "row-fluid">
