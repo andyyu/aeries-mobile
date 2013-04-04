@@ -80,7 +80,8 @@ class AeriesAPI:
 			assignments.append(assignmentinfo)
 		assignments=sorted(assignments, key=lambda assignment: assignment["name"])
 		#gets the individual assignments
-		return assignments and totalscores
+		return {["totalscores"] = scoreinfo : ["assignments"] = assignments}
+
 	
 
 	def __getPageHTML(self,url):
