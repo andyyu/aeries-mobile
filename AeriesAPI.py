@@ -54,22 +54,34 @@ class AeriesAPI:
 		odds=soup.find_all("tr", "NormalRow")
 		for i in odds:
 			rows.append(i)
+		#get all rows from soup
+		totalscores = [anyrow for anyrow in rows if anyrow.find("td", {"align": "center"}) = None]
+		for score in totalscores:
+			scoreinfo = {}
+			scoreinfo["name"] = (score.contents[0].text.encode('ascii','ignore'))
+			score = score.contents[1].text.encode('ascii','ignore')
+			scoreinfo["score"] = 0 if score=="[]" or isinstance (score, int) else int(score)
+			scoreinfo["maxscore"] = int(score.contents[2].text.encode('ascii','ignore'))
+			scoreinfo["percent"] = int(score.contents[3].text.encode('ascii','ignore'))
 		rows=[anyrow for anyrow in rows if (anyrow.find("td", {"align" : "center"})!= None  and anyrow.contents[0].text.encode('ascii','ignore').isdigit())]
+		#gets the total / cumulative grades
 		for assignment in rows:
 			assignmentinfo = {}
 			assignmentinfo["name"] = (assignment.contents[1].text.encode('ascii','ignore'))
 			assignmentinfo["type"] = (assignment.contents[2].text.encode('ascii','ignore'))
 			score=assignment.contents[4].text.encode('ascii','ignore')
-			assignmentinfo["score"] = 0 if score=="[]" else int(score)
+			assignmentinfo["score"] = 0 if score=="[]" or isinstance (score, int) else int(score)
 			assignmentinfo["maxscore"] = int(assignment.contents[5].text.encode('ascii','ignore'))
+			assignmentinfo["missing"] = true if score =="[]" else false
 			if assignmentinfo["maxscore"] != 0:
 				assignmentinfo["percent"] = ('%.2f' % ((float (assignmentinfo["score"])/ float (assignmentinfo["maxscore"]))*100)) + "%"
 			else:
 				assignmentinfo["percent"] = "100%"
 			assignments.append(assignmentinfo)
 		assignments=sorted(assignments, key=lambda assignment: assignment["name"])
-		return assignments
-
+		#gets the individual assignments
+		return assignments and totalscores
+	
 
 	def __getPageHTML(self,url):
 		with self.session as s:

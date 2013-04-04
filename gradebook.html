@@ -1,0 +1,171 @@
+<link rel="stylesheet" type="text/css" href="cssABI.css" />
+<link rel="stylesheet" type="text/css" href="ABIDynamicMenus.css" />
+
+<html>
+<head>
+<title>Aeries Browser Interface Gradebook Program - Student Assignment Scores</title>
+<script type="text/javascript" language="JavaScript" src="ABIjava.js"></script>
+<script type="text/javascript" language="javascript">
+	function HighlightRow(tr)
+	{
+		tr.style.backgroundColor = '#CCFFCC';
+	}
+	function UnHighlightRow(tr)
+	{
+		tr.style.backgroundColor = '';
+	}
+</script>
+</head>
+<body class="WithHeader" onload="CountDown()">
+<script type="text/javascript">
+var flgP;
+
+function at_show_aux(parent, child) {
+    var p = document.getElementById(parent);
+    var c = document.getElementById(child );
+    
+    var top  = p.offsetHeight+1;
+    var left = 0;
+    
+    var childnode = p.getElementsByTagName("a");
+    if (childnode[0].className == "visitedtopmenu")     {
+        flgP = 1;
+    }
+    else {
+		childnode[0].className = "activetopmenu";
+        flgP = 0;
+    }
+    
+
+    for (; p; p = p.offsetParent) {
+		top  += p.offsetTop;
+		left += p.offsetLeft;
+    }
+
+    c.style.position   = "absolute";
+    c.style.top        = top +'px';
+    c.style.left       = left+'px';
+    c.style.visibility = "visible";
+}
+
+
+// ***** at_show *****
+function at_show()
+{
+	at_hide_all();
+
+    var p = document.getElementById(this["at_parent"]);
+    var c = document.getElementById(this["at_child" ]);
+
+    at_show_aux(p.id, c.id);
+
+	
+		clearTimeout(c["at_timeout"]);
+	
+}
+
+
+// ***** at_hide *****
+function at_hide()
+{
+    var p = document.getElementById(this["at_parent"]);
+    var c = document.getElementById(this["at_child" ]);
+    
+    if (flgP != 1) {
+        var childnode = p.getElementsByTagName("a");
+
+		
+			childnode[0].className = "topdynamicmenu";
+		
+        
+        flgP = 0; 
+    }
+    
+	
+
+	c["at_timeout"] = setTimeout("document.getElementById('" + c.id + "').style.visibility = 'hidden'", 100);
+}
+
+
+// ***** at_hide_all *****
+function at_hide_all()
+{
+	
+}
+
+
+// ***** at_attach *****
+
+// PARAMETERS:
+// parent   - id of the parent html element
+// child    - id of the child  html element that should be droped down
+// cursor   - omit to use default cursor or specify CSS cursor name
+
+function at_attach(parent, child, cursor) {
+
+    if (document.getElementById(child)) {       
+        var p = document.getElementById(parent);
+        var c = document.getElementById(child);
+
+        p["at_parent"]     = p.id;
+        c["at_parent"]     = p.id;
+        p["at_child"]      = c.id;
+        c["at_child"]      = c.id;
+
+
+        c.style.position   = "absolute";
+        c.style.visibility = "hidden";
+        
+
+        if (cursor != undefined) p.style.cursor = cursor;
+
+		
+			p.onmouseover = at_show;
+			p.onmouseout  = at_hide;
+			c.onmouseover = at_show;
+			c.onmouseout  = at_hide;
+		
+    }
+}
+
+</script>
+
+<table border="0" cellspacing="0" cellpadding="0" width="100%"><tr><td align="center" valign="top" width="5%"><table border="0" cellspacing="0" cellpadding="0" width="100%"><tr valign="top"><td align="left"><img src="images/808/troylogo.gif" border="0" alt="" /></td></tr></table></td><td align="center" width="95%" style="height:100%;"><table border="0" cellspacing="0" cellpadding="0" width="100%" style="height:100%;"><tr valign="top"><td align="left"><table border="0" cellspacing="0" cellpadding="0" width="100%" bordercolor="Black" bgcolor=""><tr><td align="left" width="50%" class="PlainText" style="color:#FFFFFF;"><b><h1 style="color:#000000;">Troy High School</h1></b></td><td align="right" valign="top" width="45%" nowrap class="PlainText" style="color:#000000;"><form name="frmChangeStu" id="frmChangeStu" method="Post" action="ChangeUser.asp?cache=3%2F16%2F2013+8%3A32%3A14+PM"><input type="hidden" value="P" name="TG" id="TG" /><input type="hidden" value="" name="SN" id="SN" /><input type="hidden" value="GradebookSummary.asp" name="RedirectPage" id="RedirectPage" /></form><form name="frmChangeAvailStu" id="frmChangeAvailStu" method="Post" action="ChangeStu.asp?cache=3%2F16%2F2013+8%3A32%3A14+PM"><b>Current&nbsp;Student:&nbsp;</b><input type="hidden" name="ChangeStuNum" id="ChangeStuNum" value="15454" /><input type="hidden" name="ChangeSchlCode" id="ChangeSchlCode" value="808" /><input type="hidden" name="ChangeRedirectPage" id="ChangeRedirectPage" value="GradebookSummary.asp" /><select size="1" name="AvailableStudents" id="AvailableStudents" onchange="if (document.getElementById('AvailableStudents').value == 'Header'){ return false; }else if (document.getElementById('AvailableStudents').value == '1'){document.getElementById('ChangeStuNum').value = '15454';document.getElementById('ChangeSchlCode').value = '808';document.getElementById('frmChangeAvailStu').submit();}else if (document.getElementById('AvailableStudents').value == '2'){document.getElementById('ChangeStuNum').value = '15454';document.getElementById('ChangeSchlCode').value = '878';document.getElementById('frmChangeAvailStu').submit();} else if (document.getElementById('AvailableStudents').value == 'AddNew'){document.getElementById('ChangeStuNum').value = 'AddNew';document.getElementById('ChangeSchlCode').value = 'AddNew';document.getElementById('frmChangeAvailStu').submit();}" style="font-size: .75em"><option selected value="1">Yu, Hongseok - Grd 11 - Troy HS</option><option value="2">Yu, Hongseok - Grd 12 - Troy High Summer School</option><option value="AddNew">Add Additional Student Not Currently Listed</option></select></form><br /><b>3/16/2013 8:32:14 PM</b><br /><form name="SessionForm"><input type="hidden" name="StartTime" size="7" value="20:00"></form><b><div name="TimeLeft" id="TimeLeft"></div></b><script language="JavaScript">displayit = true;</script></td></tr></table></td></tr><tr valign="bottom"><td align="center"><table width="100%" border="0" cellpadding="0" cellspacing="0"><tr><td align="left"><table class="menutable" border="0" cellpadding="0" cellspacing="0"><tr valign="top"><td><div id="Top_1"><a class="topdynamicmenu" href="MainMenu.asp?cache=3%2F16%2F2013+8%3A32%3A14+PM" name="Home" id="Home">Home</a></div><script type="text/javascript">
+											at_attach("Top_1", "Sub_1", "pointer");
+										</script>
+										</td><td><img src="images/topmenu_vbar.gif" /></td><td><div id="Top_2"><a class="topdynamicmenu" href="StudentInfo.asp?cache=3%2F16%2F2013+8%3A32%3A14+PM&tbl=STU" name="Stu" id="Stu">Student&nbsp;Info</a></div><div id="Sub_2" style="border-bottom: outset 1px #FFFFFF;" class="SubTab"><a class="subdynamicmenu" href="StudentInfo.asp?cache=3%2F16%2F2013+8%3A32%3A14+PM&tbl=STU" name="Stu" id="Sub_Stu">Demographics</a><a class="subdynamicmenu" href="StudentInfo.asp?cache=3%2F16%2F2013+8%3A32%3A14+PM&tbl=CON" name="CON" id="Sub_CON">Emergency&nbsp;Contacts</a><a class="subdynamicmenu" href="StudentInfo.asp?cache=3%2F16%2F2013+8%3A32%3A14+PM&tbl=SEC" name="SEC" id="Sub_SEC">Class&nbsp;Schedule</a><a class="subdynamicmenu" href="StudentInfo.asp?cache=3%2F16%2F2013+8%3A32%3A14+PM&tbl=TST" name="TST" id="Sub_TST">Test&nbsp;Scores</a><a class="subdynamicmenu" href="StudentInfo.asp?cache=3%2F16%2F2013+8%3A32%3A14+PM&tbl=FEE" name="FEE" id="Sub_FEE">Fees&nbsp;and&nbsp;Fines</a><a class="subdynamicmenu" href="StudentInfo.asp?cache=3%2F16%2F2013+8%3A32%3A14+PM&tbl=ACT" name="ACT" id="Sub_ACT">Activities&nbsp;and&nbsp;Awards</a><a class="subdynamicmenu" href="StudentInfo.asp?cache=3%2F16%2F2013+8%3A32%3A14+PM&tbl=CTS" name="CTS" id="Sub_CTS">College&nbsp;Test&nbsp;Scores</a></div><script type="text/javascript">
+											at_attach("Top_2", "Sub_2", "pointer");
+										</script>
+										</td><td><img src="images/topmenu_vbar.gif" /></td><td><div id="Top_3"><a class="topdynamicmenu" href="StudentInfo.asp?cache=3%2F16%2F2013+8%3A32%3A14+PM&tbl=ATT" name="Attend" id="Attend">Attendance</a></div><script type="text/javascript">
+											at_attach("Top_3", "Sub_3", "pointer");
+										</script>
+										</td><td><img src="images/topmenu_vbar.gif" /></td><td><div id="Top_4"><a class="visitedtopmenu" href="StudentInfo.asp?cache=3%2F16%2F2013+8%3A32%3A14+PM&tbl=GRD" name="Grd" id="Grd">Grades</a></div><div id="Sub_4" style="border-bottom: outset 1px #FFFFFF;" class="SubTab"><a class="visitedsubmenu" href="GradebookSummary.asp?cache=3%2F16%2F2013+8%3A32%3A14+PM" name="ClassAssignments" id="Sub_ClassAssignments">Gradebook</a><a class="subdynamicmenu" href="GradebookActive.asp?cache=3%2F16%2F2013+8%3A32%3A14+PM" name="Homework" id="Sub_Homework">Current&nbsp;Assignments</a><a class="subdynamicmenu" href="StudentInfo.asp?cache=3%2F16%2F2013+8%3A32%3A14+PM&tbl=GRD" name="Grades" id="Sub_Grades">Grades</a><a class="subdynamicmenu" href="StudentInfo.asp?cache=3%2F16%2F2013+8%3A32%3A14+PM&tbl=REQ" name="GradStatus" id="Sub_GradStatus">Graduation&nbsp;Status</a><a class="subdynamicmenu" href="StudentInfo.asp?cache=3%2F16%2F2013+8%3A32%3A14+PM&tbl=HIS" name="His" id="Sub_His">Transcripts</a></div><script type="text/javascript">
+											at_attach("Top_4", "Sub_4", "pointer");
+										</script>
+										</td><td><img src="images/topmenu_vbar.gif" /></td><td><div id="Top_5"><a class="topdynamicmenu" href="MedHome.asp?cache=3%2F16%2F2013+8%3A32%3A14+PM" name="Medical" id="Medical">Medical</a></div><div id="Sub_5" style="border-bottom: outset 1px #FFFFFF;" class="SubTab"><a class="subdynamicmenu" href="StudentInfo.asp?cache=3%2F16%2F2013+8%3A32%3A14+PM&tbl=MED&WhichTable=IMM" name="IMM" id="Sub_IMM">Immunizations</a><a class="subdynamicmenu" href="StudentInfo.asp?cache=3%2F16%2F2013+8%3A32%3A14+PM&tbl=MED&WhichTable=HRN" name="HRN" id="Sub_HRN">Hearing</a><a class="subdynamicmenu" href="StudentInfo.asp?cache=3%2F16%2F2013+8%3A32%3A14+PM&tbl=MED&WhichTable=VSN" name="VSN" id="Sub_VSN">Vision</a></div><script type="text/javascript">
+											at_attach("Top_5", "Sub_5", "pointer");
+										</script>
+										</td><td><img src="images/topmenu_vbar.gif" /></td><td><div id="Top_6"><a class="topdynamicmenu" href="Links.asp?cache=3%2F16%2F2013+8%3A32%3A14+PM" name="Resources" id="Resources">Resources</a></div><div id="Sub_6" style="border-bottom: outset 1px #FFFFFF;" class="SubTab"><a class="subdynamicmenu" href="Links.asp?cache=3%2F16%2F2013+8%3A32%3A14+PM" name="ResLinks" id="Sub_ResLinks">Online&nbsp;Resource&nbsp;Center</a><a class="subdynamicmenu" href="NewsMain.asp?cache=3%2F16%2F2013+8%3A32%3A14+PM" name="ResNews" id="Sub_ResNews">School and District News</a><a class="subdynamicmenu" href="ReportsMain.asp?cache=3%2F16%2F2013+8%3A32%3A14+PM" name="ResRep" id="Sub_ResRep">Reports</a></div><script type="text/javascript">
+											at_attach("Top_6", "Sub_6", "pointer");
+										</script>
+										</td><td><img src="images/topmenu_vbar.gif" /></td><td style="width:100%;"></td></tr></table></td><td align="right"><table class="menutable" border="0" cellpadding="0" cellspacing="0"><tr valign="top"><td style="width:100%;"></td><td><img src="images/topmenu_vbar.gif" alt="" /></td><td><div id="Top_7"><a class="topdynamicmenu" href="options.asp" name="Options" id="Options">Options</a></div><div id="Sub_7" style="border-bottom: outset 1px #FFFFFF;" class="SubTab"><a class="subdynamicmenu" href="Options.asp?cache=3%2F16%2F2013+8%3A32%3A14+PM" name="Sub_Options" id="Sub_Options">User Options</a><a class="subdynamicmenu" href="ChangePwd.asp?cache=3%2F16%2F2013+8%3A32%3A14+PM" name="Sub_ChangePwd" id="Sub_ChangePwd">Change Password</a><a class="subdynamicmenu" href="ChangeEmail.asp?cache=3%2F16%2F2013+8%3A32%3A14+PM" name="Sub_ChangeEmail" id="Sub_ChangeEmail">Change Email</a></div><script type="text/javascript">
+											at_attach("Top_7", "Sub_7", "pointer");
+										</script>
+										</td><td><img src="images/topmenu_vbar.gif" alt="" /></td><td><div id="Top_8"><a class="topdynamicmenu" href="LoginHome.asp?cache=3%2F16%2F2013+8%3A32%3A14+PM&Logout=True" name="Logout" id="Logout">Logout</a></div><div id="Sub_8" style="border-bottom: outset 1px #FFFFFF;" class="SubTab"></div><script type="text/javascript">
+										at_attach("Top_8", "Sub_8", "pointer");
+									</script>
+									</td></tr></table></td></tr></table></td></tr></table>
+			<script language="JavaScript">
+				if (parent.NavigationFrameset == null)		// if this page is running within its own environment then...
+					document.getElementById('Logout').target = "_self";
+				else				// This page is located within the Navigation Frameset window
+									// so change the Logout link to go back to the login.asp page in the parent frame
+					document.getElementById('Logout').target = "_parent";
+			</script>
+			</td></tr><tr><td align="center" valign="top" bgcolor="#FFFFFF" height="200" colspan="2">
+<table border="0" cellspacing="0" cellpadding="0" width="100%" bordercolor="White"><tr><td align="center"><table border="1" cellspacing="0" cellpadding="2" width="800" bordercolor="#6186B3"><tr><td align="center"><table border="1" cellspacing="0" cellpadding="0" width="100%" bordercolor="White"><tr class="NormalRow"><td align="left" style="width:25%;">&nbsp;</td><td align="center" style="width:50%;"><b>Gradebook&nbsp;Summary&nbsp;for&nbsp;Hongseok Yu</b></td><td align="left" style="width:25%;"><b>&nbsp;3/16/2013 8:32:14 PM</b></td></tr></table><table border="1" cellspacing="0" cellpadding="0" width="100%" bordercolor="White"><tr class="HeaderRowBold"><td align="center">Details</td><td align="center">Gradebook</td><td align="center">Term</td><td align="center">Pd</td><td align="left">Teacher</td><td align="center">%</td><td align="center">Grade</td><td align="center">Missing<br />Assmts</td><td align="center">Last Updated</td><td align="center">Status</td></tr><tr class="NormalClickableRowEven" onmouseover="HighlightRow(this);" onmouseout="UnHighlightRow(this);" onclick="window.location = 'GradebookStuScores.asp?cache=3%2F16%2F2013+8%3A32%3A14+PM&GrdBk=2100004';"><td align="center"><a href="GradebookStuScores.asp?cache=3%2F16%2F2013+8%3A32%3A14+PM&GrdBk=2100004"><img src="images/ExpandButton.gif" border="0" alt="More Info" /></a></td><td align="left" nowrap><a href="GradebookStuScores.asp?cache=3%2F16%2F2013+8%3A32%3A14+PM&GrdBk=2100004">AP-Biology</a></td><td align="center">S</td><td align="center">0</td><td align="left">Kirkpatrick, J</td><td align="right">88.59&nbsp;&nbsp;</td><td align="left">&nbsp;&nbsp;&nbsp;&nbsp;B+</td><td align="center">0</td><td align="center" nowrap>03/14/2013 3:14 PM</td><td align="center">&nbsp;</td></tr><tr class="NormalClickableRow" onmouseover="HighlightRow(this);" onmouseout="UnHighlightRow(this);" onclick="window.location = 'GradebookStuScores.asp?cache=3%2F16%2F2013+8%3A32%3A14+PM&GrdBk=9245866';"><td align="center"><a href="GradebookStuScores.asp?cache=3%2F16%2F2013+8%3A32%3A14+PM&GrdBk=9245866"><img src="images/ExpandButton.gif" border="0" alt="More Info" /></a></td><td align="left" nowrap><a href="GradebookStuScores.asp?cache=3%2F16%2F2013+8%3A32%3A14+PM&GrdBk=9245866">Comp Sci-IB SL</a></td><td align="center">S</td><td align="center">1</td><td align="left">Coglianese</td><td align="right">92.75&nbsp;&nbsp;</td><td align="left">&nbsp;&nbsp;&nbsp;&nbsp;A</td><td align="center"><b><font color="Red">1</font></b></td><td align="center" nowrap>03/16/2013 4:58 PM</td><td align="center">&nbsp;</td></tr><tr class="NormalClickableRowEven" onmouseover="HighlightRow(this);" onmouseout="UnHighlightRow(this);" onclick="window.location = 'GradebookStuScores.asp?cache=3%2F16%2F2013+8%3A32%3A14+PM&GrdBk=298371';"><td align="center"><a href="GradebookStuScores.asp?cache=3%2F16%2F2013+8%3A32%3A14+PM&GrdBk=298371"><img src="images/ExpandButton.gif" border="0" alt="More Info" /></a></td><td align="left" nowrap><a href="GradebookStuScores.asp?cache=3%2F16%2F2013+8%3A32%3A14+PM&GrdBk=298371">English IB-SL</a></td><td align="center">S</td><td align="center">2</td><td align="left">Hinman</td><td align="right">89.74&nbsp;&nbsp;</td><td align="left">&nbsp;&nbsp;&nbsp;&nbsp;B+</td><td align="center">0</td><td align="center" nowrap>03/14/2013 10:32 AM</td><td align="center">&nbsp;</td></tr><tr class="NormalClickableRow" onmouseover="HighlightRow(this);" onmouseout="UnHighlightRow(this);" onclick="window.location = 'GradebookStuScores.asp?cache=3%2F16%2F2013+8%3A32%3A14+PM&GrdBk=3430307';"><td align="center"><a href="GradebookStuScores.asp?cache=3%2F16%2F2013+8%3A32%3A14+PM&GrdBk=3430307"><img src="images/ExpandButton.gif" border="0" alt="More Info" /></a></td><td align="left" nowrap><a href="GradebookStuScores.asp?cache=3%2F16%2F2013+8%3A32%3A14+PM&GrdBk=3430307">Spanish-IB SL</a></td><td align="center">S</td><td align="center">3</td><td align="left">Donnelly</td><td align="right">86.39&nbsp;&nbsp;</td><td align="left">&nbsp;&nbsp;&nbsp;&nbsp;B</td><td align="center">0</td><td align="center" nowrap>03/15/2013 11:10 AM</td><td align="center">&nbsp;</td></tr><tr class="NormalClickableRowEven" onmouseover="HighlightRow(this);" onmouseout="UnHighlightRow(this);" onclick="window.location = 'GradebookStuScores.asp?cache=3%2F16%2F2013+8%3A32%3A14+PM&GrdBk=7394844';"><td align="center"><a href="GradebookStuScores.asp?cache=3%2F16%2F2013+8%3A32%3A14+PM&GrdBk=7394844"><img src="images/ExpandButton.gif" border="0" alt="More Info" /></a></td><td align="left" nowrap><a href="GradebookStuScores.asp?cache=3%2F16%2F2013+8%3A32%3A14+PM&GrdBk=7394844">Philosophy-IBSL</a></td><td align="center">S</td><td align="center">4</td><td align="left">Christner</td><td align="right">90.00&nbsp;&nbsp;</td><td align="left">&nbsp;&nbsp;&nbsp;&nbsp;A</td><td align="center">0</td><td align="center" nowrap>03/04/2013 7:45 AM</td><td align="center">&nbsp;</td></tr><tr class="NormalClickableRow" onmouseover="HighlightRow(this);" onmouseout="UnHighlightRow(this);" onclick="window.location = 'GradebookStuScores.asp?cache=3%2F16%2F2013+8%3A32%3A14+PM&GrdBk=1242707';"><td align="center"><a href="GradebookStuScores.asp?cache=3%2F16%2F2013+8%3A32%3A14+PM&GrdBk=1242707"><img src="images/ExpandButton.gif" border="0" alt="More Info" /></a></td><td align="left" nowrap><a href="GradebookStuScores.asp?cache=3%2F16%2F2013+8%3A32%3A14+PM&GrdBk=1242707">AP-US Hist</a></td><td align="center">S</td><td align="center">5</td><td align="left">Robinson</td><td align="right">84.51&nbsp;&nbsp;</td><td align="left">&nbsp;&nbsp;&nbsp;&nbsp;B</td><td align="center">0</td><td align="center" nowrap>03/06/2013 2:47 PM</td><td align="center">&nbsp;</td></tr><tr class="HeaderRowBold"><td align="left" colspan="10">Prior Terms</td></tr><tr class="NormalClickableRowEven" onmouseover="HighlightRow(this);" onmouseout="UnHighlightRow(this);" onclick="window.location = 'GradebookStuScores.asp?cache=3%2F16%2F2013+8%3A32%3A14+PM&GrdBk=898509';"><td align="center"><a href="GradebookStuScores.asp?cache=3%2F16%2F2013+8%3A32%3A14+PM&GrdBk=898509"><img src="images/ExpandButton.gif" border="0" alt="More Info" /></a></td><td align="left" nowrap><a href="GradebookStuScores.asp?cache=3%2F16%2F2013+8%3A32%3A14+PM&GrdBk=898509">AP-Biology</a></td><td align="center">F</td><td align="center">0</td><td align="left">Kirkpatrick, J</td><td align="right">89.69&nbsp;&nbsp;</td><td align="left">&nbsp;&nbsp;&nbsp;&nbsp;A-</td><td align="center"><b><font color="Red">1</font></b></td><td align="center" nowrap>01/29/2013 12:29 PM</td><td align="center">Prior Term Ended<br />01/24/2013</td></tr><tr class="NormalClickableRow" onmouseover="HighlightRow(this);" onmouseout="UnHighlightRow(this);" onclick="window.location = 'GradebookStuScores.asp?cache=3%2F16%2F2013+8%3A32%3A14+PM&GrdBk=769853';"><td align="center"><a href="GradebookStuScores.asp?cache=3%2F16%2F2013+8%3A32%3A14+PM&GrdBk=769853"><img src="images/ExpandButton.gif" border="0" alt="More Info" /></a></td><td align="left" nowrap><a href="GradebookStuScores.asp?cache=3%2F16%2F2013+8%3A32%3A14+PM&GrdBk=769853">English IB-SL</a></td><td align="center">F</td><td align="center">2</td><td align="left">Hinman</td><td align="right">92.03&nbsp;&nbsp;</td><td align="left">&nbsp;&nbsp;&nbsp;&nbsp;A-</td><td align="center">0</td><td align="center" nowrap>01/23/2013 9:47 AM</td><td align="center">Prior Term Ended<br />01/24/2013</td></tr><tr class="NormalClickableRowEven" onmouseover="HighlightRow(this);" onmouseout="UnHighlightRow(this);" onclick="window.location = 'GradebookStuScores.asp?cache=3%2F16%2F2013+8%3A32%3A14+PM&GrdBk=4893381';"><td align="center"><a href="GradebookStuScores.asp?cache=3%2F16%2F2013+8%3A32%3A14+PM&GrdBk=4893381"><img src="images/ExpandButton.gif" border="0" alt="More Info" /></a></td><td align="left" nowrap><a href="GradebookStuScores.asp?cache=3%2F16%2F2013+8%3A32%3A14+PM&GrdBk=4893381">Spanish-IB SL</a></td><td align="center">F</td><td align="center">3</td><td align="left">Donnelly</td><td align="right">90.60&nbsp;&nbsp;</td><td align="left">&nbsp;&nbsp;&nbsp;&nbsp;A-</td><td align="center">0</td><td align="center" nowrap>01/23/2013 12:34 PM</td><td align="center">Prior Term Ended<br />01/24/2013</td></tr><tr class="NormalClickableRow" onmouseover="HighlightRow(this);" onmouseout="UnHighlightRow(this);" onclick="window.location = 'GradebookStuScores.asp?cache=3%2F16%2F2013+8%3A32%3A14+PM&GrdBk=8771487';"><td align="center"><a href="GradebookStuScores.asp?cache=3%2F16%2F2013+8%3A32%3A14+PM&GrdBk=8771487"><img src="images/ExpandButton.gif" border="0" alt="More Info" /></a></td><td align="left" nowrap><a href="GradebookStuScores.asp?cache=3%2F16%2F2013+8%3A32%3A14+PM&GrdBk=8771487">Philosophy-IBSL</a></td><td align="center">F</td><td align="center">4</td><td align="left">Christner</td><td align="right">95.20&nbsp;&nbsp;</td><td align="left">&nbsp;&nbsp;&nbsp;&nbsp;A</td><td align="center">0</td><td align="center" nowrap>01/24/2013 9:00 AM</td><td align="center">Prior Term Ended<br />01/24/2013</td></tr><tr class="NormalClickableRowEven" onmouseover="HighlightRow(this);" onmouseout="UnHighlightRow(this);" onclick="window.location = 'GradebookStuScores.asp?cache=3%2F16%2F2013+8%3A32%3A14+PM&GrdBk=9214769';"><td align="center"><a href="GradebookStuScores.asp?cache=3%2F16%2F2013+8%3A32%3A14+PM&GrdBk=9214769"><img src="images/ExpandButton.gif" border="0" alt="More Info" /></a></td><td align="left" nowrap><a href="GradebookStuScores.asp?cache=3%2F16%2F2013+8%3A32%3A14+PM&GrdBk=9214769">AP-US Hist</a></td><td align="center">F</td><td align="center">5</td><td align="left">Robinson</td><td align="right">90.25&nbsp;&nbsp;</td><td align="left">&nbsp;&nbsp;&nbsp;&nbsp;A-</td><td align="center">0</td><td align="center" nowrap>01/24/2013 12:42 PM</td><td align="center">Prior Term Ended<br />01/24/2013</td></tr></table></td></tr></table></td></tr></table></td></tr>
+<tr class="NormalRowEven"><td align="center" colspan="2">ABI Version 4.12.9.26 &nbsp;&nbsp;&nbsp; Copyright  2013 Eagle Software. All rights reserved.</td></tr>
+</table>
+
+</body>
+</html>
