@@ -80,7 +80,7 @@ class AeriesAPI:
 			assignments.append(assignmentinfo)
 		assignments=sorted(assignments, key=lambda assignment: assignment["name"])
 		#gets the individual assignments
-		return {["totalscores"] = scoreinfo : ["assignments"] = assignments}
+		return {["totalscores"]:scoreinfo , ["assignments"]:assignments}
 
 	
 
