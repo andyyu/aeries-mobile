@@ -72,7 +72,6 @@ class AeriesAPI:
 			assignmentinfo["name"] = (assignment.contents[1].text)
 			assignmentinfo["type"] = (assignment.contents[2].text)
 			score=assignment.contents[4].text.encode('ascii','ignore')
-			print score
 			assignmentinfo["score"] = self.to_number(score)
 			assignmentinfo["maxscore"] = int(assignment.contents[5].text) 
 			assignmentinfo["missing"] = True if score =="[]" else False
@@ -80,6 +79,8 @@ class AeriesAPI:
 				assignmentinfo["percent"] = ('%.2f' % ((float (assignmentinfo["score"])/ float (assignmentinfo["maxscore"]))*100)) + "%"
 			else:
 				assignmentinfo["percent"] = "100%"
+			graded=assignment.contents[8].text.encode('ascii','ignore')
+			assignmentinfo["graded"]=True if graded=="Yes" else False
 			assignments.append(assignmentinfo)
 		assignments=sorted(assignments, key=lambda assignment: assignment["name"])
 		#gets the individual assignments

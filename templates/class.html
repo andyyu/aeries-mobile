@@ -26,7 +26,7 @@
 				<div class= "assignment-type">
 					<h4><i class= "icon-plus-sign collapse-icon"></i>{{assignment_set.type}}</h4>
 					<div class= "collapse">
-						<table class="table table-striped table-bordered table-condensed table-hover">	
+						<table class="table table-striped table-bordered table-condensed table-hover assignments_table">	
 								
 						<thead>
 							<tr>
@@ -36,7 +36,11 @@
 							</tr>
 						</thead>
 						{% for assignment in assignment_set.assignments %}
+							{% if assignment.missing %}
+							<tr class= "missing">
+							{% else %}
 							<tr>
+							{% endif %}
 								<td><small>{{assignment.name}}</small></td>
 								<td><small>{{assignment.score}}/{{assignment.maxscore}}</small></td>
 								<td><small>{{assignment.percent}}</small></td>
