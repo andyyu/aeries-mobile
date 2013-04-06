@@ -9,10 +9,17 @@
     <link href="{{ url_for('static',filename='style.css') }}" rel="stylesheet" media="screen">
 <style type="text/css"></style><style type="text/css"></style></head>
 <body>
-		<div class="header">
+		<div class="header header2">
 			<div id="black-bar"></div>
 		</div>
-		<div class="content-fluid">
+		<div class="header header-main" style="display:none;">
+			<div id= "logo-bar">
+				<img src="{{ url_for('static',filename='img/nav-logo-2.png') }}" />
+				<a href="#myModal" role="button" class= "info-button" data-toggle="modal"><i class= "icon-info-sign"></i></a>
+			</div>
+		</div>
+
+		<div class="container-fluid">
 			<div class="row-fluid">
 				<div id="login-box">					
 					<img id= "aeries-logo" src= "{{ url_for('static',filename='img/aeries-logo.png') }}" />
@@ -20,13 +27,19 @@
 					<form id="login_form" method="POST" action="/login">
 						<input type="text" id="user" name="user" placeholder="Email Address"><br>
 						<input type="password" id="pass" name="pass" placeholder="Password"><br>
-						<input type="submit" id= "submit" value="Log in!" class="btn btn-login">
+						<input type="submit" id= "submit" value="Log in!" class="btn btn-login new_page_button">
 					</form>			
 				</div>
 			</div>
 		</div>
 
+		<div class= "loading">
+			<img src="{{ url_for('static',filename='img/loading.gif') }}" /><br>
+			Loading...
+		</div>
+
 	<script src="http://code.jquery.com/jquery.js"></script>
+	<script src="{{ url_for('static',filename='script.js') }}"></script>
     <script src="{{ url_for('static',filename='/bootstrap/js/bootstrap.min.js') }}"></script>
 </body>
 </html>

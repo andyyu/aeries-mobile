@@ -10,12 +10,13 @@
     <link href='http://fonts.googleapis.com/css?family=Droid+Sans' rel='stylesheet' type='text/css'>
 </head>
 <body>
-		<div class="header">
+		<div class="header header-main">
 			<div id= "logo-bar">
 				<img src="{{ url_for('static',filename='img/nav-logo-2.png') }}" />
 				<a href="#myModal" role="button" class= "info-button" data-toggle="modal"><i class= "icon-info-sign"></i></a>
 			</div>
 		</div>
+
 		<div class="container-fluid">
 			<div class= "row-fluid">
 				<div class="span12">
@@ -26,7 +27,7 @@
 				<ul id= "period_list">
 					{% for period in periods %}
 						<li class="{{loop.cycle('even', 'odd')}}_period">
-						<a href="{{ url_for('period', class_id=period.class_id) }}">{{period.name}}</a>
+						<a href="{{ url_for('period', class_id=period.class_id) }}" class= "new_page_button">{{period.name}}</a>
 						<span class= "period_percent">{{period.percentgrade}}</span>
 						</li>
 					{% endfor %}
@@ -50,7 +51,13 @@
 			
 		</div>
 
+		<div class= "loading">
+			<img src="{{ url_for('static',filename='img/loading.gif') }}" /><br>
+			Loading...
+		</div>
+
 	<script src="http://code.jquery.com/jquery.js"></script>
+	<script src="{{ url_for('static',filename='script.js') }}"></script>
     <script src="{{ url_for('static',filename='bootstrap/js/bootstrap.min.js') }}"></script>
 </body>
 </html>

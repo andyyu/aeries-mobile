@@ -9,7 +9,7 @@
     <link href='http://fonts.googleapis.com/css?family=Droid+Sans' rel='stylesheet' type='text/css'>
 </head>
 <body>
-		<div class="header">
+		<div class="header header-main">
 			<div id= "logo-bar">
 				<img src="{{ url_for('static',filename='img/nav-logo-2.png') }}" />
 				<a href="#myModal" role="button" class= "info-button" data-toggle="modal"><i class= "icon-info-sign"></i></a>
@@ -71,20 +71,8 @@
 		</div>
 
 	<script src="http://code.jquery.com/jquery.js"></script>
+	<script src="{{ url_for('static',filename='script.js') }}"></script>
     <script src="{{ url_for('static',filename='bootstrap/js/bootstrap.min.js') }}"></script>    
-    <script type= "text/javascript">
-    	$(document).ready(function(){
-    		$(".assignment-type h4").click(function(){
-    			var $icon= $(this).children(".collapse-icon");
-    			if($icon.hasClass('icon-plus-sign'))
-    				$icon.removeClass('icon-plus-sign').addClass('icon-minus-sign');
-    			else
-    				$icon.removeClass('icon-minus-sign').addClass('icon-plus-sign');
-    			var $collapse= $(this).siblings('.collapse');
-    			$collapse.collapse('toggle');
-    		})
-    		
-    	})
-    </script>
+    
 </body>
 </html>
