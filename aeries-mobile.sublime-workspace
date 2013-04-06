@@ -67,7 +67,7 @@
 			"file": "/C/Users/shivam/Documents/Projects/aeries-mobile/hello.py",
 			"settings":
 			{
-				"buffer_size": 1217,
+				"buffer_size": 1563,
 				"line_ending": "Windows"
 			}
 		},
@@ -75,7 +75,7 @@
 			"file": "/C/Users/shivam/Documents/Projects/aeries-mobile/templates/class.html",
 			"settings":
 			{
-				"buffer_size": 1290,
+				"buffer_size": 3269,
 				"line_ending": "Windows"
 			}
 		},
@@ -83,7 +83,7 @@
 			"file": "/C/Users/shivam/Documents/Projects/aeries-mobile/templates/gradebook.html",
 			"settings":
 			{
-				"buffer_size": 1033,
+				"buffer_size": 2369,
 				"line_ending": "Windows"
 			}
 		},
@@ -91,7 +91,7 @@
 			"file": "/C/Users/shivam/Documents/Projects/aeries-mobile/templates/login.html",
 			"settings":
 			{
-				"buffer_size": 1057,
+				"buffer_size": 1259,
 				"line_ending": "Windows"
 			}
 		},
@@ -99,7 +99,7 @@
 			"file": "/C/Users/shivam/Documents/Projects/aeries-mobile/static/style.css",
 			"settings":
 			{
-				"buffer_size": 872,
+				"buffer_size": 3570,
 				"line_ending": "Windows"
 			}
 		},
@@ -108,22 +108,6 @@
 			"settings":
 			{
 				"buffer_size": 529,
-				"line_ending": "Windows"
-			}
-		},
-		{
-			"file": "/C/Users/shivam/Documents/Projects/aeries-mobile/run_tests.py",
-			"settings":
-			{
-				"buffer_size": 69,
-				"line_ending": "Windows"
-			}
-		},
-		{
-			"file": "/C/Users/shivam/Documents/Projects/aeries-mobile/tests/AeriesAPITester.py",
-			"settings":
-			{
-				"buffer_size": 290,
 				"line_ending": "Windows"
 			}
 		}
@@ -236,9 +220,15 @@
 	},
 	"file_history":
 	[
+		"/C/Users/shivam/Documents/Projects/aeries-mobile/static/fontawesome/css/font-awesome.css",
+		"/C/Users/shivam/Documents/Projects/aeries-mobile/run_tests.py",
+		"/C/Users/shivam/Documents/Projects/aeries-mobile/tests/AeriesAPITester.py",
+		"/C/Users/shivam/Documents/Projects/aeries-mobile/.git/config",
+		"/C/Users/shivam/Documents/Projects/aeries-mobile/static/bootstrap/css/bootstrap.css",
+		"/C/Users/shivam/Documents/Django/tunetype/.git/config",
+		"/C/Users/shivam/Documents/Projects/aeries-mobile/static/bootstrap/css/bootstrap.min.css",
 		"/C/Users/shivam/AppData/Roaming/Sublime Text 2/Packages/Default/Default (Windows).sublime-keymap",
 		"/C/Users/shivam/Documents/Projects/aeries-mobile/AeriesAPI.py",
-		"/C/Users/shivam/Documents/Projects/aeries-mobile/tests/AeriesAPITester.py",
 		"/C/Users/shivam/Documents/Projects/aeries-mobile/templates/login.html",
 		"/C/Users/shivam/Documents/Projects/aeries-mobile/Procfile",
 		"/C/Users/shivam/Documents/Projects/aeriesmobile_apibackup.py",
@@ -253,7 +243,6 @@
 		"/C/Users/shivam/Documents/python/script/terms.txt",
 		"/C/Users/shivam/Documents/Projects/khaninterview.js",
 		"/C/Users/shivam/Documents/Projects/aeries-mobile/gradebook.html",
-		"/C/Users/shivam/Documents/Projects/aeries-mobile/.git/config",
 		"/C/Users/shivam/Documents/Projects/aeries-mobile/login.py",
 		"/C/Users/shivam/Documents/Projects/khan exercises/exercises/average_rate_of_change.html",
 		"/C/Users/shivam/Documents/Projects/khan exercises/.git/config",
@@ -358,16 +347,11 @@
 		"/C/Users/shivam/Documents/Django/tunetype/tunetype/settings.py",
 		"/C/Users/shivam/Documents/Django/tunetype/templates/404.html",
 		"/C/Users/shivam/Documents/Django/tunetype/templates/tunetype/base.html",
-		"/C/Users/shivam/Documents/Django/tunetype/templates/lyriccheck/lyrics.html",
-		"/C/Users/shivam/Documents/Django/tunetype/lyriccheck/static/css/style.css",
-		"/C/Users/shivam/Documents/Django/tunetype/tunetype/views.py",
-		"/C/Users/shivam/Documents/Django/tunetype/lyriccheck/views.py",
-		"/C/Users/shivam/Documents/Django/tunetype/lyriccheck/static/css/bootstrap.css",
-		"/C/Users/shivam/Documents/Django/tunetype/manage.py"
+		"/C/Users/shivam/Documents/Django/tunetype/templates/lyriccheck/lyrics.html"
 	],
 	"find":
 	{
-		"height": 38
+		"height": 42
 	},
 	"find_in_files":
 	{
@@ -390,6 +374,9 @@
 		"case_sensitive": true,
 		"find_history":
 		[
+			"collapse",
+			".btn-info",
+			"btn",
 			",",
 			"[0-9]+\\.\\s",
 			"\\[0-9]+.",
@@ -529,7 +516,7 @@
 	"groups":
 	[
 		{
-			"selected": 2,
+			"selected": 4,
 			"sheets":
 			[
 				{
@@ -571,8 +558,8 @@
 						"selection":
 						[
 							[
-								2140,
-								867
+								3040,
+								3040
 							]
 						],
 						"settings":
@@ -581,7 +568,7 @@
 							"syntax": "Packages/Djaneiro/Syntaxes/Python Django.tmLanguage"
 						},
 						"translation.x": 0,
-						"translation.y": 496,
+						"translation.y": 733,
 						"zoom_level": 1
 					},
 					"type": "text"
@@ -591,15 +578,15 @@
 					"file": "/C/Users/shivam/Documents/Projects/aeries-mobile/hello.py",
 					"settings":
 					{
-						"buffer_size": 1217,
+						"buffer_size": 1563,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								1213,
-								1213
+								1019,
+								1019
 							]
 						],
 						"settings":
@@ -608,7 +595,7 @@
 							"syntax": "Packages/Djaneiro/Syntaxes/Python Django.tmLanguage"
 						},
 						"translation.x": 0,
-						"translation.y": 72,
+						"translation.y": 321,
 						"zoom_level": 1
 					},
 					"type": "text"
@@ -618,15 +605,15 @@
 					"file": "/C/Users/shivam/Documents/Projects/aeries-mobile/templates/class.html",
 					"settings":
 					{
-						"buffer_size": 1290,
+						"buffer_size": 3269,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								533,
-								533
+								565,
+								565
 							]
 						],
 						"settings":
@@ -635,7 +622,7 @@
 							"syntax": "Packages/HTML/HTML.tmLanguage"
 						},
 						"translation.x": 0,
-						"translation.y": 46,
+						"translation.y": 0,
 						"zoom_level": 1
 					},
 					"type": "text"
@@ -645,15 +632,15 @@
 					"file": "/C/Users/shivam/Documents/Projects/aeries-mobile/templates/gradebook.html",
 					"settings":
 					{
-						"buffer_size": 1033,
+						"buffer_size": 2369,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								362,
-								294
+								1087,
+								1087
 							]
 						],
 						"settings":
@@ -672,15 +659,15 @@
 					"file": "/C/Users/shivam/Documents/Projects/aeries-mobile/templates/login.html",
 					"settings":
 					{
-						"buffer_size": 1057,
+						"buffer_size": 1259,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								1050,
-								1050
+								613,
+								674
 							]
 						],
 						"settings":
@@ -699,15 +686,15 @@
 					"file": "/C/Users/shivam/Documents/Projects/aeries-mobile/static/style.css",
 					"settings":
 					{
-						"buffer_size": 872,
+						"buffer_size": 3570,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								34,
-								34
+								3570,
+								3570
 							]
 						],
 						"settings":
@@ -716,7 +703,7 @@
 							"syntax": "Packages/CSS/CSS.tmLanguage"
 						},
 						"translation.x": 0,
-						"translation.y": 0,
+						"translation.y": 2530,
 						"zoom_level": 1
 					},
 					"type": "text"
@@ -735,60 +722,6 @@
 							[
 								529,
 								529
-							]
-						],
-						"settings":
-						{
-							"incomplete_sync": null,
-							"syntax": "Packages/Djaneiro/Syntaxes/Python Django.tmLanguage"
-						},
-						"translation.x": 0,
-						"translation.y": 0,
-						"zoom_level": 1
-					},
-					"type": "text"
-				},
-				{
-					"buffer": 8,
-					"file": "/C/Users/shivam/Documents/Projects/aeries-mobile/run_tests.py",
-					"settings":
-					{
-						"buffer_size": 69,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								69,
-								69
-							]
-						],
-						"settings":
-						{
-							"incomplete_sync": null,
-							"syntax": "Packages/Djaneiro/Syntaxes/Python Django.tmLanguage"
-						},
-						"translation.x": 0,
-						"translation.y": 0,
-						"zoom_level": 1
-					},
-					"type": "text"
-				},
-				{
-					"buffer": 9,
-					"file": "/C/Users/shivam/Documents/Projects/aeries-mobile/tests/AeriesAPITester.py",
-					"settings":
-					{
-						"buffer_size": 290,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								261,
-								261
 							]
 						],
 						"settings":
@@ -869,6 +802,6 @@
 	"show_open_files": true,
 	"show_tabs": true,
 	"side_bar_visible": true,
-	"side_bar_width": 143,
+	"side_bar_width": 260,
 	"status_bar_visible": true
 }

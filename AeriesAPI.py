@@ -55,12 +55,12 @@ class AeriesAPI:
 		for i in odds:
 			rows.append(i)
 		#get all rows from soup
-		totalscores = [anyrow for anyrow in rows if anyrow.find("td", {"align": "center"}) = None]
+		totalscores = [anyrow for anyrow in rows if anyrow.find("td", {"align": "center"}) == None]
 		for score in totalscores:
 			scoreinfo = {}
 			scoreinfo["name"] = (score.contents[0].text.encode('ascii','ignore'))
 			score = score.contents[1].text.encode('ascii','ignore')
-			scoreinfo["score"] = 0 if score=="[]" or isinstance (score, int) else int(score)
+			scoreinfo["score"] = 0 if score=="[]" or not isinstance (score, int) else int(score)
 			scoreinfo["maxscore"] = int(score.contents[2].text.encode('ascii','ignore'))
 			scoreinfo["percent"] = int(score.contents[3].text.encode('ascii','ignore'))
 		rows=[anyrow for anyrow in rows if (anyrow.find("td", {"align" : "center"})!= None  and anyrow.contents[0].text.encode('ascii','ignore').isdigit())]
