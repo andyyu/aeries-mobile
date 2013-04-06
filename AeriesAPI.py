@@ -1,6 +1,8 @@
+# -*- coding: utf-8 -*- 
 from requests import session
 import unicodedata
 from bs4 import BeautifulSoup
+
 """
 
 """
@@ -30,16 +32,16 @@ class AeriesAPI:
 		rows=[row for row in rows if row.contents[9].text.encode('ascii','ignore')==""] #get rid of past terms			
 		for period in rows:
 			classinfo = {}
-			classinfo["name"] = (period.contents[1].text.encode('ascii','ignore'))
-			classinfo["num"] = int(period.contents[3].text.encode('ascii','ignore'))
-			classinfo["percentgrade"] = (period.contents[5].text.encode('ascii','ignore'))
-			classinfo["lettergrade"] = (period.contents[6].text.encode('ascii','ignore'))
-			classinfo["missingassign"] = (period.contents[7].text.encode('ascii','ignore'))
+			classinfo["name"] = (period.contents[1].text)
+			classinfo["num"] = int(period.contents[3].text)
+			classinfo["percentgrade"] = (period.contents[5].text)
+			classinfo["lettergrade"] = (period.contents[6].text)
+			classinfo["missingassign"] = (period.contents[7].text)
 			#some stuff i'm working on with the links
 			link= period.contents[1].contents[0].get('href').split('&GrdBk=')
 			classinfo["class_id"] = link[1].encode('ascii','ignore')		
 			self.base_period_url = ("https://mystudent.fjuhsd.net/"+link[0]+"&GrdBk=").encode('ascii','ignore')
-			classinfo["full_url"]=period.contents[1].contents[0].get('href').encode('ascii','ignore')
+			classinfo["full_url"]=period.contents[1].contents[0].get('href')
 			periods.append(classinfo)
 		periods=sorted(periods, key=lambda period: period["num"]) #sort them by period numbers
 		return periods
@@ -56,23 +58,24 @@ class AeriesAPI:
 			rows.append(i)
 		#get all rows from soup
 		totalscores = [anyrow for anyrow in rows if anyrow.find("td", {"align": "center"}) == None]
-		for score in totalscores:
-			scoreinfo = {}
-			scoreinfo["name"] = (score.contents[0].text.encode('ascii','ignore'))
-			score = score.contents[1].text.encode('ascii','ignore')
-			scoreinfo["score"] = 0 if score=="[]" or not isinstance (score, int) else int(score)
-			scoreinfo["maxscore"] = int(score.contents[2].text.encode('ascii','ignore'))
-			scoreinfo["percent"] = int(score.contents[3].text.encode('ascii','ignore'))
+		#for score in totalscores:
+		#	scoreinfo = {}
+		#	scoreinfo["name"] = (score.contents[0].text.encode('ascii','ignore'))
+		#	score = score.contents[1].text.encode('ascii','ignore')
+		#	scoreinfo["score"] = 0 if score=="[]" or not isinstance (score, int) else int(score)
+		#	scoreinfo["maxscore"] = int(score.contents[2].text.encode('ascii','ignore'))
+		#	scoreinfo["percent"] = int(score.contents[3].text.encode('ascii','ignore'))
 		rows=[anyrow for anyrow in rows if (anyrow.find("td", {"align" : "center"})!= None  and anyrow.contents[0].text.encode('ascii','ignore').isdigit())]
 		#gets the total / cumulative grades
 		for assignment in rows:
 			assignmentinfo = {}
-			assignmentinfo["name"] = (assignment.contents[1].text.encode('ascii','ignore'))
-			assignmentinfo["type"] = (assignment.contents[2].text.encode('ascii','ignore'))
-			score=assignment.contents[4].text.encode('ascii','ignore')
+			assignmentinfo["name"] = (assignment.contents[1].text)
+			assignmentinfo["type"] = (assignment.contents[2].text)
+			print assignmentinfo["type"]
+			score=assignment.contents[4].text
 			assignmentinfo["score"] = 0 if score=="[]" or isinstance (score, int) else int(score)
-			assignmentinfo["maxscore"] = int(assignment.contents[5].text.encode('ascii','ignore'))
-			assignmentinfo["missing"] = true if score =="[]" else false
+			assignmentinfo["maxscore"] = int(assignment.contents[5].text)
+			assignmentinfo["missing"] = True if score =="[]" else False
 			if assignmentinfo["maxscore"] != 0:
 				assignmentinfo["percent"] = ('%.2f' % ((float (assignmentinfo["score"])/ float (assignmentinfo["maxscore"]))*100)) + "%"
 			else:
@@ -80,7 +83,8 @@ class AeriesAPI:
 			assignments.append(assignmentinfo)
 		assignments=sorted(assignments, key=lambda assignment: assignment["name"])
 		#gets the individual assignments
-		return {["totalscores"]:scoreinfo , ["assignments"]:assignments}
+		return assignments
+		#return {["totalscores"]:scoreinfo , ["assignments"]:assignments}
 
 	
 
