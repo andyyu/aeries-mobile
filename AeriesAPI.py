@@ -72,7 +72,7 @@ class AeriesAPI:
 			assignmentinfo["name"] = (assignment.contents[1].text)
 			assignmentinfo["type"] = (assignment.contents[2].text)
 			score=assignment.contents[4].text
-			assignmentinfo["score"] = 0 if score=="[]" or isinstance (score, int) else int(score)
+			assignmentinfo["score"] = 0 if score=="[]" or not isinstance (score, int) else int(score)
 			assignmentinfo["maxscore"] = int(assignment.contents[5].text)
 			assignmentinfo["missing"] = True if score =="[]" else False
 			if assignmentinfo["maxscore"] != 0:
