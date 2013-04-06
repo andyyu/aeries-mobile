@@ -62,7 +62,7 @@ class AeriesAPI:
 		#	scoreinfo = {}
 		#	scoreinfo["name"] = (score.contents[0].text.encode('ascii','ignore'))
 		#	score = score.contents[1].text.encode('ascii','ignore')
-		#	scoreinfo["score"] = 0 if score=="[]" or not isinstance (score, int) else int(score)
+		#	scoreinfo["score"] = self.to_number(score)
 		#	scoreinfo["maxscore"] = int(score.contents[2].text.encode('ascii','ignore'))
 		#	scoreinfo["percent"] = int(score.contents[3].text.encode('ascii','ignore'))
 		rows=[anyrow for anyrow in rows if (anyrow.find("td", {"align" : "center"})!= None  and anyrow.contents[0].text.encode('ascii','ignore').isdigit())]
@@ -71,9 +71,10 @@ class AeriesAPI:
 			assignmentinfo = {}
 			assignmentinfo["name"] = (assignment.contents[1].text)
 			assignmentinfo["type"] = (assignment.contents[2].text)
-			score=assignment.contents[4].text
-			assignmentinfo["score"] = 0 if score=="[]" or not isinstance (score, int) else int(score)
-			assignmentinfo["maxscore"] = int(assignment.contents[5].text)
+			score=assignment.contents[4].text.encode('ascii','ignore')
+			print score
+			assignmentinfo["score"] = self.to_number(score)
+			assignmentinfo["maxscore"] = int(assignment.contents[5].text) 
 			assignmentinfo["missing"] = True if score =="[]" else False
 			if assignmentinfo["maxscore"] != 0:
 				assignmentinfo["percent"] = ('%.2f' % ((float (assignmentinfo["score"])/ float (assignmentinfo["maxscore"]))*100)) + "%"
@@ -85,7 +86,11 @@ class AeriesAPI:
 		return assignments
 		#return {["totalscores"]:scoreinfo , ["assignments"]:assignments}
 
-	
+	def to_number(self,s):
+		try:
+			return int(s)
+		except ValueError:
+			return 0
 
 	def __getPageHTML(self,url):
 		with self.session as s:
