@@ -1,4 +1,4 @@
-# -*- coding: utf-8 -*- 
+# coding=utf-8
 from requests import session
 import unicodedata
 from bs4 import BeautifulSoup
