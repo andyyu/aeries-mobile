@@ -59,7 +59,15 @@
 			"file": "/C/Users/shivam/Documents/Projects/aeries-mobile/AeriesAPI.py",
 			"settings":
 			{
-				"buffer_size": 3189,
+				"buffer_size": 3889,
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "/C/Users/shivam/Documents/Projects/aeries-mobile/tests/AeriesAPITester.py",
+			"settings":
+			{
+				"buffer_size": 290,
 				"line_ending": "Windows"
 			}
 		},
@@ -75,7 +83,7 @@
 			"file": "/C/Users/shivam/Documents/Projects/aeries-mobile/templates/class.html",
 			"settings":
 			{
-				"buffer_size": 3269,
+				"buffer_size": 2970,
 				"line_ending": "Windows"
 			}
 		},
@@ -83,7 +91,7 @@
 			"file": "/C/Users/shivam/Documents/Projects/aeries-mobile/templates/gradebook.html",
 			"settings":
 			{
-				"buffer_size": 2369,
+				"buffer_size": 2554,
 				"line_ending": "Windows"
 			}
 		},
@@ -91,7 +99,7 @@
 			"file": "/C/Users/shivam/Documents/Projects/aeries-mobile/templates/login.html",
 			"settings":
 			{
-				"buffer_size": 1259,
+				"buffer_size": 1719,
 				"line_ending": "Windows"
 			}
 		},
@@ -99,7 +107,15 @@
 			"file": "/C/Users/shivam/Documents/Projects/aeries-mobile/static/style.css",
 			"settings":
 			{
-				"buffer_size": 3570,
+				"buffer_size": 3812,
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "/C/Users/shivam/Documents/Projects/aeries-mobile/static/script.js",
+			"settings":
+			{
+				"buffer_size": 1226,
 				"line_ending": "Windows"
 			}
 		},
@@ -351,7 +367,7 @@
 	],
 	"find":
 	{
-		"height": 42
+		"height": 32
 	},
 	"find_in_files":
 	{
@@ -374,6 +390,7 @@
 		"case_sensitive": true,
 		"find_history":
 		[
+			"print",
 			"collapse",
 			".btn-info",
 			"btn",
@@ -516,7 +533,7 @@
 	"groups":
 	[
 		{
-			"selected": 4,
+			"selected": 8,
 			"sheets":
 			[
 				{
@@ -551,15 +568,15 @@
 					"file": "/C/Users/shivam/Documents/Projects/aeries-mobile/AeriesAPI.py",
 					"settings":
 					{
-						"buffer_size": 3189,
+						"buffer_size": 3889,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								3040,
-								3040
+								3122,
+								3122
 							]
 						],
 						"settings":
@@ -568,13 +585,40 @@
 							"syntax": "Packages/Djaneiro/Syntaxes/Python Django.tmLanguage"
 						},
 						"translation.x": 0,
-						"translation.y": 733,
+						"translation.y": 1074,
 						"zoom_level": 1
 					},
 					"type": "text"
 				},
 				{
 					"buffer": 2,
+					"file": "/C/Users/shivam/Documents/Projects/aeries-mobile/tests/AeriesAPITester.py",
+					"settings":
+					{
+						"buffer_size": 290,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								268,
+								261
+							]
+						],
+						"settings":
+						{
+							"incomplete_sync": null,
+							"syntax": "Packages/Djaneiro/Syntaxes/Python Django.tmLanguage"
+						},
+						"translation.x": 0,
+						"translation.y": 0,
+						"zoom_level": 1
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 3,
 					"file": "/C/Users/shivam/Documents/Projects/aeries-mobile/hello.py",
 					"settings":
 					{
@@ -595,52 +639,25 @@
 							"syntax": "Packages/Djaneiro/Syntaxes/Python Django.tmLanguage"
 						},
 						"translation.x": 0,
-						"translation.y": 321,
-						"zoom_level": 1
-					},
-					"type": "text"
-				},
-				{
-					"buffer": 3,
-					"file": "/C/Users/shivam/Documents/Projects/aeries-mobile/templates/class.html",
-					"settings":
-					{
-						"buffer_size": 3269,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								565,
-								565
-							]
-						],
-						"settings":
-						{
-							"incomplete_sync": null,
-							"syntax": "Packages/HTML/HTML.tmLanguage"
-						},
-						"translation.x": 0,
-						"translation.y": 0,
+						"translation.y": 33,
 						"zoom_level": 1
 					},
 					"type": "text"
 				},
 				{
 					"buffer": 4,
-					"file": "/C/Users/shivam/Documents/Projects/aeries-mobile/templates/gradebook.html",
+					"file": "/C/Users/shivam/Documents/Projects/aeries-mobile/templates/class.html",
 					"settings":
 					{
-						"buffer_size": 2369,
+						"buffer_size": 2970,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								1087,
-								1087
+								594,
+								594
 							]
 						],
 						"settings":
@@ -656,18 +673,45 @@
 				},
 				{
 					"buffer": 5,
-					"file": "/C/Users/shivam/Documents/Projects/aeries-mobile/templates/login.html",
+					"file": "/C/Users/shivam/Documents/Projects/aeries-mobile/templates/gradebook.html",
 					"settings":
 					{
-						"buffer_size": 1259,
+						"buffer_size": 2554,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								613,
-								674
+								2316,
+								2316
+							]
+						],
+						"settings":
+						{
+							"incomplete_sync": null,
+							"syntax": "Packages/HTML/HTML.tmLanguage"
+						},
+						"translation.x": 0,
+						"translation.y": 530,
+						"zoom_level": 1
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 6,
+					"file": "/C/Users/shivam/Documents/Projects/aeries-mobile/templates/login.html",
+					"settings":
+					{
+						"buffer_size": 1719,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								1480,
+								1407
 							]
 						],
 						"settings":
@@ -676,25 +720,25 @@
 							"syntax": "Packages/Djaneiro/Syntaxes/HTML (Django).tmLanguage"
 						},
 						"translation.x": 0,
-						"translation.y": 0,
+						"translation.y": 114,
 						"zoom_level": 1
 					},
 					"type": "text"
 				},
 				{
-					"buffer": 6,
+					"buffer": 7,
 					"file": "/C/Users/shivam/Documents/Projects/aeries-mobile/static/style.css",
 					"settings":
 					{
-						"buffer_size": 3570,
+						"buffer_size": 3812,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								3570,
-								3570
+								3660,
+								3660
 							]
 						],
 						"settings":
@@ -703,13 +747,40 @@
 							"syntax": "Packages/CSS/CSS.tmLanguage"
 						},
 						"translation.x": 0,
-						"translation.y": 2530,
+						"translation.y": 2834,
 						"zoom_level": 1
 					},
 					"type": "text"
 				},
 				{
-					"buffer": 7,
+					"buffer": 8,
+					"file": "/C/Users/shivam/Documents/Projects/aeries-mobile/static/script.js",
+					"settings":
+					{
+						"buffer_size": 1226,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								220,
+								220
+							]
+						],
+						"settings":
+						{
+							"incomplete_sync": null,
+							"syntax": "Packages/JavaScript/JavaScript.tmLanguage"
+						},
+						"translation.x": 0,
+						"translation.y": 0,
+						"zoom_level": 1
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 9,
 					"file": "/C/Users/shivam/Documents/Projects/aeries-mobile/login.py",
 					"settings":
 					{

@@ -19,8 +19,12 @@ class AeriesAPI:
 
 		self.session=session()
 		with self.session as s:
-		    s.post('https://mystudent.fjuhsd.net/loginprochome.asp', data=payload)		
+		    s.post('https://mystudent.fjuhsd.net/loginprochome.asp', data=payload)
 		self.gradebookHTML= self.__getPageHTML('https://mystudent.fjuhsd.net/GradebookSummary.asp')
+		soup=BeautifulSoup(self.gradebookHTML)
+		images=soup.find_all(src='images/btnLogin.gif')
+		if len(images)>0:
+			raise Exception("Incorrect Username or Password!")
 
 	def getPeriods(self):
 		soup = BeautifulSoup(self.gradebookHTML)

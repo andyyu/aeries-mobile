@@ -24,7 +24,11 @@ def login():
 	if request.method=='POST':
 		user=request.form['user']
 		pw=request.form['pass']
-		student=Student.Student(user,pw)
+		try:
+			student=Student.Student(user,pw)
+		except Exception as e:
+			return render_template('login.html', error=True)
+
 		session["user"]=user
 		session["pw"]=pw
 		return render_template('gradebook.html', user=user, pw=pw, periods=student.periods)

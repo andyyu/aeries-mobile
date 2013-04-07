@@ -28,7 +28,12 @@
 						<input type="text" id="user" name="user" placeholder="Email Address"><br>
 						<input type="password" id="pass" name="pass" placeholder="Password"><br>
 						<input type="submit" id= "submit" value="Log in!" class="btn btn-login new_page_button">
-					</form>			
+					</form>	
+					{% if error %}
+						<div class="alert alert-error">
+							Incorrect email/password!
+						</div>
+					{% endif %}	
 				</div>
 			</div>
 		</div>

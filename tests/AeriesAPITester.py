@@ -1,7 +1,8 @@
 #Add tests for AeriesAPI here 
 import AeriesAPI
-s=AeriesAPI.AeriesAPI('annuj@sbcglobal.net','shivamt')
+s=AeriesAPI.AeriesAPI('t','st')
 s.login()
+print s.gradebookHTML
 
 #test to check if periods are correctly fetched
 #
