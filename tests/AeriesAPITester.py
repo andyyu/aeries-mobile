@@ -1,6 +1,6 @@
 #Add tests for AeriesAPI here 
 import AeriesAPI
-s=AeriesAPI.AeriesAPI('andytheyu@gmail.com','hongseok426')
+s=AeriesAPI.AeriesAPI(user,pw)
 s.login()
 print s.gradebookHTML
 

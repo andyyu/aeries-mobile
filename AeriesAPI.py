@@ -75,7 +75,7 @@ class AeriesAPI:
 			scoreinfo["percent"] = float(score.contents[3].text)
 			scores.append(scoreinfo)
 		#gets the total / cumulative grades
-		rows=[anyrow for anyrow in rows if (anyrow.find("td", {"align" : "center"})!= None  and anyrow.contents[0].text.isdigit())]
+		rows=[anyrow for anyrow in rows if (anyrow.find("td", {"align" : "center"})!= None  and anyrow.contents[0].text.encode('ascii','ignore').isdigit())]
 		for assignment in rows:
 			assignmentinfo = {}
 			assignmentinfo["name"] = (assignment.contents[1].text)
@@ -93,6 +93,7 @@ class AeriesAPI:
 			assignments.append(assignmentinfo)
 		assignments=sorted(assignments, key=lambda assignment: assignment["name"])
 		#gets the individual assignments
+		print assignments
 		return {"totalscores":scores , "assignments":assignments}
 
 	def to_number(self,s):
