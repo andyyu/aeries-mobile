@@ -40,7 +40,9 @@ def period(class_id):
 	for period in student.periods:
 		if(period["class_id"]==class_id):
 			period_name=period["name"]
-	assignments=student.aeries.getPeriodAssignments(class_id)
+	period_stuff=student.aeries.getPeriodAssignments(class_id)
+	assignments= period_stuff['assignments']
+	total_scores=period_stuff['totalscores']
 	assignment_types=[]
 	for assignment in assignments:
 		ass_type= assignment["type"]
@@ -53,7 +55,7 @@ def period(class_id):
 			"assignments": [ass for ass in assignments if ass["type"]==ass_type]
 		})
 	assignments=new_ass
-	return render_template('class.html', assignments=assignments, period_name=period_name)
+	return render_template('class.html', assignments=assignments, total_scores= total_scores, period_name=period_name)
 
 if __name__ == '__main__':
 	port = int(os.environ.get('PORT', 5000))

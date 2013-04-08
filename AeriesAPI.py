@@ -68,10 +68,7 @@ class AeriesAPI:
 			scoreinfo["name"] = (score.contents[0].text)
 			score1 = (score.contents[1].text)
 			scoreinfo["score"] = self.to_number(score1)
-			try:
-				scoreinfo["maxscore"] = int(score.contents[2].text)
-			except ValueError:
-				scoreinfo["maxscore"] = 0
+			scoreinfo["maxscore"]= self.to_number(score.contents[2].text)
 			scoreinfo["percent"] = float(score.contents[3].text)
 			scores.append(scoreinfo)
 		#gets the total / cumulative grades
@@ -93,12 +90,11 @@ class AeriesAPI:
 			assignments.append(assignmentinfo)
 		assignments=sorted(assignments, key=lambda assignment: assignment["name"])
 		#gets the individual assignments
-		print assignments
 		return {"totalscores":scores , "assignments":assignments}
 
 	def to_number(self,s):
 		try:
-			return int(s)
+			return int(float(s))
 		except ValueError:
 			return 0
 
