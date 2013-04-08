@@ -62,14 +62,17 @@ class AeriesAPI:
 		for i in odds:
 			rows.append(i)
 		#get all rows from soup
-		totalscores = [anyrow for anyrow in rows if anyrow.find("td", {"align": "center"}) == None]
+		totalscores = [anyrow for anyrow in rows if (anyrow.find("td", {"align": "center"}) == None and anyrow.find("td",{"align": "right"}) != None)]
 		for score in totalscores:
 			scoreinfo = {}
 			scoreinfo["name"] = (score.contents[0].text)
-			score = (score.contents[1].text)
-			scoreinfo["score"] = self.to_number(score)
-			scoreinfo["maxscore"] = int(score.contents[2].text)
-			scoreinfo["percent"] = int(score.contents[3].text)
+			score1 = (score.contents[1].text)
+			scoreinfo["score"] = self.to_number(score1)
+			try:
+				scoreinfo["maxscore"] = int(score.contents[2].text)
+			except ValueError:
+				scoreinfo["maxscore"] = 0
+			scoreinfo["percent"] = float(score.contents[3].text)
 			scores.append(scoreinfo)
 		#gets the total / cumulative grades
 		rows=[anyrow for anyrow in rows if (anyrow.find("td", {"align" : "center"})!= None  and anyrow.contents[0].text.isdigit())]
@@ -90,7 +93,7 @@ class AeriesAPI:
 			assignments.append(assignmentinfo)
 		assignments=sorted(assignments, key=lambda assignment: assignment["name"])
 		#gets the individual assignments
-		return {["totalscores"]:scores , ["assignments"]:assignments}
+		return {"totalscores":scores , "assignments":assignments}
 
 	def to_number(self,s):
 		try:
