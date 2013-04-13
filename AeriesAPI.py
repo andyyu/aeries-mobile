@@ -65,11 +65,18 @@ class AeriesAPI:
 		totalscores = [anyrow for anyrow in rows if (anyrow.find("td", {"align": "center"}) == None and anyrow.find("td",{"align": "right"}) != None)]
 		for score in totalscores:
 			scoreinfo = {}
-			scoreinfo["name"] = (score.contents[0].text)
-			score1 = (score.contents[1].text)
-			scoreinfo["score"] = self.to_number(score1)
-			scoreinfo["maxscore"]= self.to_number(score.contents[2].text)
-			scoreinfo["percent"] = float(score.contents[3].text)
+			if isinstance (score.contents[4], float): #checks for classes with weighted grades
+				scoreinfo["name"] = (score.contents[0].text)
+				score1 = (score.contents[2].text)
+				scoreinfo["score"] = self.to_number(score1)
+				scoreinfo["maxscore"]= self.to_number(score.contents[3].text)
+				scoreinfo["percent"] = float(score.contents[4].text)
+			else:
+				scoreinfo["name"] = (score.contents[0].text)
+				score1 = (score.contents[1].text)
+				scoreinfo["score"] = self.to_number(score1)
+				scoreinfo["maxscore"]= self.to_number(score.contents[2].text)
+				scoreinfo["percent"] = float(score.contents[3].text)
 			scores.append(scoreinfo)
 		#gets the total / cumulative grades
 		rows=[anyrow for anyrow in rows if (anyrow.find("td", {"align" : "center"})!= None  and anyrow.contents[0].text.encode('ascii','ignore').isdigit())]
