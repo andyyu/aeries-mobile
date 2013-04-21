@@ -1,6 +1,6 @@
 #Add tests for AeriesAPI here 
 import AeriesAPI
-s=AeriesAPI.AeriesAPI('annuj@sbcglobal.net','shivamt')
+s=AeriesAPI.AeriesAPI('','')
 s.login()
 
 #test to check if periods are correctly fetched
