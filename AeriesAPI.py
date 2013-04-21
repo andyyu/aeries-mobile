@@ -57,20 +57,31 @@ class AeriesAPI:
 		soup=BeautifulSoup(html)
 		assignments = []
 		scores = []
-		rows = soup.find_all("tr", "NormalRowEven")
-		odds=soup.find_all("tr", "NormalRow")
-		for i in odds:
+		rows = soup.find_all("tr", "NormalRow")
+		evens=soup.find_all("tr", "NormalRowEven")
+		for i in evens:
 			rows.append(i)
 		#get all rows from soup
 		totalscores = [anyrow for anyrow in rows if (anyrow.find("td", {"align": "center"}) == None and anyrow.find("td",{"align": "right"}) != None)]
+		weighted=False
 		for score in totalscores:
 			scoreinfo = {}
-			if isinstance (score.contents[4], float): #checks for classes with weighted grades
-				scoreinfo["name"] = (score.contents[0].text)
-				score1 = (score.contents[2].text)
-				scoreinfo["score"] = self.to_number(score1)
-				scoreinfo["maxscore"]= self.to_number(score.contents[3].text)
-				scoreinfo["percent"] = float(score.contents[4].text)
+			if len(score.contents)>=5 and (weighted or self.is_float(score.contents[4].text)): #checks for classes with weighted grades, some classes have only 4 total score columns (apush, philo)
+
+				if score['class'][0]==u'NormalRowEven':
+					scoreinfo["name"]=(score.contents[0].text)
+					scoreinfo["percentOfGrade"]=""
+					scoreinfo["score"]=""
+					scoreinfo["maxscore"]=""
+					scoreinfo["percent"] = float(score.contents[4].text)
+				else:
+					scoreinfo["name"] = (score.contents[0].text)
+					scoreinfo["percentOfGrade"]= score.contents[1].text
+					score1 = (score.contents[2].text)
+					scoreinfo["score"] = self.to_number(score1)
+					scoreinfo["maxscore"]= self.to_number(score.contents[3].text)
+					scoreinfo["percent"] = float(score.contents[4].text)
+				weighted=True #alternative check for weighted grades. total grades row for weighted have no contents[4]
 			else:
 				scoreinfo["name"] = (score.contents[0].text)
 				score1 = (score.contents[1].text)
@@ -97,7 +108,14 @@ class AeriesAPI:
 			assignments.append(assignmentinfo)
 		assignments=sorted(assignments, key=lambda assignment: assignment["name"])
 		#gets the individual assignments
-		return {"totalscores":scores , "assignments":assignments}
+		return {"totalscores":scores, "weighted":weighted, "assignments":assignments}
+	
+	def is_float(self,s):
+		try:
+			float(s)
+			return True
+		except ValueError:
+			return False
 
 	def to_number(self,s):
 		try:

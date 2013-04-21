@@ -8,6 +8,6 @@ s.login()
 #print "Classes: "
 #print s.getPeriods()
 
-print "Bio Assignments:"
-print s.getPeriodAssignments('2100004')
+print "Spanish Assignments:"
+print s.getPeriodAssignments('3430307')
 #add new tests here

@@ -4,6 +4,18 @@
 		"selected_items":
 		[
 			[
+				"Estri",
+				"Estribo"
+			],
+			[
+				"el",
+				"el"
+			],
+			[
+				"DISP",
+				"DISPLAYSURF"
+			],
+			[
 				"none",
 				"none"
 			],
@@ -48,82 +60,58 @@
 	"buffers":
 	[
 		{
-			"file": "/C/Users/shivam/Documents/Projects/aeries-mobile/Student.py",
+			"file": "/C/Users/shivam/Documents/school/2012-13/1_eng/like water for chocolate/essay.tex",
 			"settings":
 			{
-				"buffer_size": 663,
+				"buffer_size": 386,
 				"line_ending": "Windows"
 			}
 		},
 		{
-			"file": "/C/Users/shivam/Documents/Projects/aeries-mobile/AeriesAPI.py",
+			"file": "/C/Users/shivam/Documents/school/2012-13/1_eng/like water for chocolate/outline.tex",
 			"settings":
 			{
-				"buffer_size": 3889,
+				"buffer_size": 1318,
 				"line_ending": "Windows"
 			}
 		},
 		{
-			"file": "/C/Users/shivam/Documents/Projects/aeries-mobile/tests/AeriesAPITester.py",
+			"file": "/C/Users/shivam/Documents/school/2012-13/1_eng/like water for chocolate/content.tex",
 			"settings":
 			{
-				"buffer_size": 290,
+				"buffer_size": 2138,
 				"line_ending": "Windows"
 			}
 		},
 		{
-			"file": "/C/Users/shivam/Documents/Projects/aeries-mobile/hello.py",
+			"file": "/C/Users/shivam/Documents/school/2012-13/4_philo/maltese falcon/outline.md",
 			"settings":
 			{
-				"buffer_size": 1563,
+				"buffer_size": 1210,
 				"line_ending": "Windows"
 			}
 		},
 		{
-			"file": "/C/Users/shivam/Documents/Projects/aeries-mobile/templates/class.html",
+			"contents": "Reojo: El Ramo Azul\nEmbrollos: El Embrollón\nEntristecer: El Embrollón\nEntrañable: Sentado en el Estribo\nApenada: El Ramo Azul\nAgravio: La Viudita\nBonachón: El Embrollón\nParroquia: El Embrollón\nChispas: El Ramo Azul\nMurria: Sentado en el Estribo\nDesmañado: El Embrollón\nHongo: El Papel de Plata\nBizco: El Embrollón\nDescalzar: El Ramo Azul\nRamo: El Ramo Azul\nDifunto: La Viudita\nRozar: El Ramo Azul\nAullar: Sentado en el Estribo\nHalago: Sentado en el Estribo\nLa Faena: Sentado en el Estribo\nLío: El Gran Vacío\nEnterarse: El Gran Vacío\nJadeando: El Gran Vacío\nVeloz: Ramoncito\nAtuendo: El Forastero\nHabano: El Forastero\nDesagraciado: Marcelo Brito\nDesmayado: La Llorona\nAgobios: Marcelo Brito\n\nEmbustero: La Viudita\nRostro: \nRendirse\nPesadilla\nRecado\nDesplomarse\nHurtarse\nCuenco\nAvergonzar",
 			"settings":
 			{
-				"buffer_size": 2970,
+				"buffer_size": 786,
 				"line_ending": "Windows"
 			}
 		},
 		{
-			"file": "/C/Users/shivam/Documents/Projects/aeries-mobile/templates/gradebook.html",
+			"file": "/C/Users/shivam/AppData/Roaming/Sublime Text 2/Packages/User/LaTeX.sublime-settings",
 			"settings":
 			{
-				"buffer_size": 2554,
+				"buffer_size": 102,
 				"line_ending": "Windows"
 			}
 		},
 		{
-			"file": "/C/Users/shivam/Documents/Projects/aeries-mobile/templates/login.html",
+			"file": "/C/Users/shivam/AppData/Roaming/Sublime Text 2/Packages/User/Markdown.sublime-settings",
 			"settings":
 			{
-				"buffer_size": 1719,
-				"line_ending": "Windows"
-			}
-		},
-		{
-			"file": "/C/Users/shivam/Documents/Projects/aeries-mobile/static/style.css",
-			"settings":
-			{
-				"buffer_size": 3812,
-				"line_ending": "Windows"
-			}
-		},
-		{
-			"file": "/C/Users/shivam/Documents/Projects/aeries-mobile/static/script.js",
-			"settings":
-			{
-				"buffer_size": 1226,
-				"line_ending": "Windows"
-			}
-		},
-		{
-			"file": "/C/Users/shivam/Documents/Projects/aeries-mobile/login.py",
-			"settings":
-			{
-				"buffer_size": 529,
+				"buffer_size": 102,
 				"line_ending": "Windows"
 			}
 		}
@@ -227,7 +215,7 @@
 	},
 	"distraction_free":
 	{
-		"menu_visible": true,
+		"menu_visible": false,
 		"show_minimap": false,
 		"show_open_files": true,
 		"show_tabs": false,
@@ -236,16 +224,53 @@
 	},
 	"file_history":
 	[
+		"/C/Users/shivam/Documents/school/2012-13/4_philo/maltese falcon/outline",
+		"/C/Users/shivam/Documents/school/2012-13/1_eng/like water for chocolate/content.tex",
+		"/C/Users/shivam/AppData/Roaming/Sublime Text 2/Packages/LaTeXTools/LaTeX.sublime-build",
+		"/C/Users/shivam/AppData/Roaming/Sublime Text 2/Packages/User/LaTeX.sublime-settings",
+		"/C/Users/shivam/Documents/Projects/MultiTask/rhythmgametest.py",
+		"/C/Users/shivam/AppData/Roaming/Sublime Text 2/Packages/User/Dawn.tmTheme",
+		"/C/Users/shivam/Desktop/usb/Programs/Sublime Text 1.4/Data/Packages/Color Scheme - Default/Dawn.tmTheme",
+		"/C/Users/shivam/AppData/Roaming/Sublime Text 2/Packages/User/Default (Windows).sublime-keymap",
+		"/C/Users/shivam/AppData/Roaming/Sublime Text 2/Packages/User/LaTeXTools Preferences.sublime-settings",
+		"/C/Users/shivam/AppData/Roaming/Sublime Text 2/Packages/User/Global.sublime-settings",
+		"/C/Users/shivam/Documents/Projects/MultiTask/blockdodge.py",
+		"/C/Users/shivam/AppData/Roaming/Sublime Text 2/Packages/User/Base File.sublime-settings",
+		"/C/Users/shivam/AppData/Roaming/Sublime Text 2/Packages/Default/Base File.sublime-settings",
+		"/C/Users/shivam/AppData/Roaming/Sublime Text 2/Backup/20130314213554/LaTeXTools/LaTeXTools Preferences.sublime-settings",
+		"/C/Users/shivam/AppData/Roaming/Sublime Text 2/Backup/20130117174142/Djaneiro/Settings/Python (Django).sublime-settings",
+		"/C/Users/shivam/AppData/Roaming/Sublime Text 2/Backup/20130117174142/Djaneiro/Settings/HTML (Django).sublime-settings",
+		"/C/Users/shivam/AppData/Roaming/Sublime Text 2/Backup/20130208190420/DocBlockr/Base File.sublime-settings",
+		"/C/Users/shivam/AppData/Roaming/Sublime Text 2/Pristine Packages/LaTeX.sublime-package",
+		"/C/Program Files (x86)/Sublime Text 2/Pristine Packages/LaTeX.sublime-package",
+		"/C/Users/shivam/Desktop/usb/Programs/Sublime Text 1.4/Data/Packages/LaTeX/LaTeX.sublime-options",
+		"/C/Users/shivam/AppData/Roaming/Sublime Text 2/Packages/User/Distraction Free.sublime-settings",
+		"/C/Users/shivam/Documents/Projects/aeries-mobile/AeriesAPI.py",
+		"/C/Users/shivam/Documents/Projects/Pygame-First-Tests/animationtest.py",
+		"/C/Users/shivam/Documents/Projects/Pygame-First-Tests/rhythmgametest.py",
+		"/C/Users/shivam/Documents/Projects/pgs4a-0.9.4/mygame/main.py",
+		"/C/Users/shivam/Documents/Projects/pgs4a-0.9.4/buildlib/plat.py",
+		"/C/Users/shivam/Documents/Projects/Pygame-First-Tests/fonttest.py",
+		"/C/Users/shivam/Documents/Projects/Pygame-First-Tests/blockdodgetest.py",
+		"/C/Users/shivam/Documents/Projects/MultiTask/.git/config",
+		"/C/Users/shivam/Documents/Projects/pgs4a-0.9.4/android.py",
+		"/C/Users/shivam/Documents/Projects/aeries-mobile/Student.py",
+		"/C/Users/shivam/Documents/Projects/aeries-mobile/hello.py",
+		"/C/Users/shivam/Documents/Projects/aeries-mobile/templates/class.html",
+		"/C/Users/shivam/Documents/Projects/aeries-mobile/templates/gradebook.html",
+		"/C/Users/shivam/Documents/Projects/aeries-mobile/templates/login.html",
+		"/C/Users/shivam/Documents/Projects/aeries-mobile/static/style.css",
+		"/C/Users/shivam/Documents/Projects/aeries-mobile/static/script.js",
+		"/C/Users/shivam/Documents/Projects/aeries-mobile/login.py",
+		"/C/Users/shivam/Documents/Projects/aeries-mobile/tests/AeriesAPITester.py",
+		"/C/Users/shivam/Documents/Projects/Pygame-First-Tests/shapestest.py",
 		"/C/Users/shivam/Documents/Projects/aeries-mobile/static/fontawesome/css/font-awesome.css",
 		"/C/Users/shivam/Documents/Projects/aeries-mobile/run_tests.py",
-		"/C/Users/shivam/Documents/Projects/aeries-mobile/tests/AeriesAPITester.py",
 		"/C/Users/shivam/Documents/Projects/aeries-mobile/.git/config",
 		"/C/Users/shivam/Documents/Projects/aeries-mobile/static/bootstrap/css/bootstrap.css",
 		"/C/Users/shivam/Documents/Django/tunetype/.git/config",
 		"/C/Users/shivam/Documents/Projects/aeries-mobile/static/bootstrap/css/bootstrap.min.css",
 		"/C/Users/shivam/AppData/Roaming/Sublime Text 2/Packages/Default/Default (Windows).sublime-keymap",
-		"/C/Users/shivam/Documents/Projects/aeries-mobile/AeriesAPI.py",
-		"/C/Users/shivam/Documents/Projects/aeries-mobile/templates/login.html",
 		"/C/Users/shivam/Documents/Projects/aeries-mobile/Procfile",
 		"/C/Users/shivam/Documents/Projects/aeriesmobile_apibackup.py",
 		"/C/xampp/htdocs/h5bp-mobile-boilerplate-eb25172/index.html",
@@ -259,12 +284,10 @@
 		"/C/Users/shivam/Documents/python/script/terms.txt",
 		"/C/Users/shivam/Documents/Projects/khaninterview.js",
 		"/C/Users/shivam/Documents/Projects/aeries-mobile/gradebook.html",
-		"/C/Users/shivam/Documents/Projects/aeries-mobile/login.py",
 		"/C/Users/shivam/Documents/Projects/khan exercises/exercises/average_rate_of_change.html",
 		"/C/Users/shivam/Documents/Projects/khan exercises/.git/config",
 		"/C/Users/shivam/Documents/python/quora challenges/feedoptimizer.py",
 		"/C/Users/shivam/DOCUME~1/Projects/FIRSTK~1/average_rate_of_change.html",
-		"/C/Users/shivam/AppData/Roaming/Sublime Text 2/Packages/User/Default (Windows).sublime-keymap",
 		"/C/Users/shivam/Documents/Projects/sat flashcards/site/index.html",
 		"/C/Users/shivam/Documents/school/2012-13/2_compsci/SAT-Vocab-Chrome-Extension/README.md",
 		"/C/Users/shivam/Documents/Django/tunetype/templates/tunetype/index.html",
@@ -272,7 +295,6 @@
 		"/C/Users/shivam/Documents/Projects/sat flashcards/site/ftpsync.settings",
 		"/C/Users/shivam/Documents/Django/tunetype/templates/battle/lyrics.html",
 		"/C/Users/shivam/Documents/school/2012-13/1_eng/bovary/essay.tex",
-		"/C/Users/shivam/AppData/Roaming/Sublime Text 2/Packages/LaTeXTools/LaTeX.sublime-build",
 		"/C/Users/shivam/Desktop/usb/Programs/Sublime Text 1.4/Data/Packages/LaTeX/LaTeX.sublime-build",
 		"/C/Users/shivam/Documents/school/2012-13/ib/ee_tex/essay.tex",
 		"/C/Users/shivam/Documents/school/2012-13/ib/ee_tex/wordcount.tex",
@@ -287,7 +309,6 @@
 		"/C/Users/shivam/Documents/school/2012-13/1_eng/bovary/essay.aux",
 		"/C/Users/shivam/Documents/school/2012-13/ib/ee_tex - Copy/essay.aux",
 		"/C/Users/shivam/AppData/Roaming/Sublime Text 2/Packages/LaTeXTools/LaTeXTools Preferences.sublime-settings",
-		"/C/Users/shivam/AppData/Roaming/Sublime Text 2/Packages/User/LaTeXTools Preferences.sublime-settings",
 		"/C/Users/shivam/Documents/school/2012-13/ib/ee tex/mybib.bib",
 		"/C/Users/shivam/Documents/school/2012-13/ib/ee tex/essay.tex",
 		"/C/Users/shivam/Documents/school/2012-13/2_compsci/SAT-Vocab-Chrome-Extension/js/QuizletFetcher.js",
@@ -314,7 +335,6 @@
 		"/C/Users/shivam/AppData/Roaming/Sublime Text 2/Packages/DocBlockr/js.sublime-completions",
 		"/C/Users/shivam/AppData/Roaming/Sublime Text 2/Packages/Default/Default/Add Line.sublime-macro",
 		"/C/Users/shivam/AppData/Roaming/Sublime Text 2/Packages/DocBlockr/jsdocs.py",
-		"/C/Users/shivam/AppData/Roaming/Sublime Text 2/Packages/User/Base File.sublime-settings",
 		"/C/Users/shivam/AppData/Roaming/Sublime Text 2/Packages/DocBlockr/Base File.sublime-settings",
 		"/C/Users/shivam/Documents/Django/tunetype/training/views.py",
 		"/C/Users/shivam/Documents/school/2012-13/1_eng/bovary/texexample.tex",
@@ -324,46 +344,14 @@
 		"/C/Users/shivam/Documents/school/2012-13/2_compsci/SAT-Vocab-Chrome-Extension/css/style",
 		"/C/Users/shivam/Documents/Projects/freelance/new site/new new/index.html",
 		"/C/Users/shivam/Downloads/cssrefresh.js",
-		"/C/Users/shivam/AppData/Roaming/Sublime Text 2/Packages/User/LaTeX.sublime-settings",
 		"/E/School/1_eng/homessay/backup",
 		"/E/School/1_eng/homessay/homessay.tex",
 		"/C/Users/shivam/AppData/Roaming/Sublime Text 2/Packages/User/Python.sublime-settings",
 		"/C/Program Files (x86)/Sublime Text 2/Pristine Packages/Default.sublime-package",
-		"/C/Program Files (x86)/Sublime Text 2/Pristine Packages/LaTeX.sublime-package",
-		"/C/Users/shivam/AppData/Roaming/Sublime Text 2/Packages/User/Global.sublime-settings",
 		"/C/Users/shivam/AppData/Roaming/Sublime Text 2/Packages/FTPSync/FTPSync.sublime-settings",
 		"/C/Users/shivam/AppData/Roaming/Sublime Text 2/Packages/User/FTPSync.sublime-settings",
 		"/C/Users/shivam/AppData/Roaming/Sublime Text 2/Packages/Package Control/Package Control.sublime-settings",
-		"/C/Users/shivam/AppData/Roaming/Sublime Text 2/Packages/User/SFTP.errors.log",
-		"/C/Users/shivam/Documents/Django/tunetype-heroku/tunetype/templates/base.html",
-		"/E/School/0_bio/Winterbreak essays/osmosis/main.tex",
-		"/E/School/1_eng/sunalsorises/sunalsorises.tex",
-		"/E/School/0_bio/Winterbreak essays/osmosis/essay1.tex",
-		"/E/coding/learning node.js/index.js",
-		"/E/coding/learning node.js/server.js",
-		"/E/coding/learning node.js/router.js",
-		"/E/coding/learning node.js/requestHandlers.js",
-		"/E/coding/learning node.js/route.js",
-		"/E/School/0_bio/Winterbreak essays/osmosis/essay3.tex",
-		"/E/School/0_bio/Winterbreak essays/osmosis/essay2.tex",
-		"/E/School/0_bio/Winterbreak essays/osmosis/osmosis.tex",
-		"/C/Users/shivam/Documents/Django/tunetype/static/js/lyrics.js",
-		"/C/Users/shivam/Documents/Django/tunetype/templates/training/lyrics.html",
-		"/C/Users/shivam/Documents/Django/tunetype/static/js/battle.js",
-		"/C/Users/shivam/Downloads/CodeWarsOld/CodeWarsOld/public/js/bug_detector.js",
-		"/C/Users/shivam/Documents/Django/tunetype/static/css/style.css",
-		"/C/Users/shivam/Downloads/CodeWarsOld/CodeWarsOld/public/code_ninja.html",
-		"/C/Users/shivam/Documents/Django/tunetype/tunetype/urls.py",
-		"/C/Users/shivam/Documents/Django/tunetype/training/urls.py",
-		"/C/Users/shivam/Downloads/CodeWarsOld/CodeWarsOld/public/js/code_ninja.js",
-		"/C/Users/shivam/Downloads/CodeWarsOld/CodeWarsOld/public/js/ninja_tests.js",
-		"/C/Users/shivam/Documents/Django/tunetype/battle/views.py",
-		"/C/Users/shivam/Documents/Django/tunetype/templates/battle/backup",
-		"/C/Users/shivam/Documents/Django/tunetype/battle/urls.py",
-		"/C/Users/shivam/Documents/Django/tunetype/tunetype/settings.py",
-		"/C/Users/shivam/Documents/Django/tunetype/templates/404.html",
-		"/C/Users/shivam/Documents/Django/tunetype/templates/tunetype/base.html",
-		"/C/Users/shivam/Documents/Django/tunetype/templates/lyriccheck/lyrics.html"
+		"/C/Users/shivam/AppData/Roaming/Sublime Text 2/Packages/User/SFTP.errors.log"
 	],
 	"find":
 	{
@@ -387,9 +375,31 @@
 	},
 	"find_state":
 	{
-		"case_sensitive": true,
+		"case_sensitive": false,
 		"find_history":
 		[
+			"ado",
+			"ma",
+			"de",
+			"^\\n",
+			"At",
+			"\\n",
+			"parr",
+			"pa",
+			"080808",
+			"234A97",
+			"#2",
+			"#24",
+			"794938",
+			"#693A17",
+			"#69",
+			"#080808",
+			"background",
+			"embedded",
+			"redraw",
+			"emptybox",
+			"rand",
+			"    ",
 			"print",
 			"collapse",
 			".btn-info",
@@ -495,15 +505,18 @@
 			"    ",
 			"template",
 			"template_",
-			"install",
-			"maxlength"
+			"install"
 		],
-		"highlight": true,
+		"highlight": false,
 		"in_selection": false,
 		"preserve_case": false,
-		"regex": false,
+		"regex": true,
 		"replace_history":
 		[
+			"",
+			"000000",
+			"313131",
+			"\\t",
 			"Score",
 			",\\n",
 			"",
@@ -524,7 +537,7 @@
 			"",
 			"max_length"
 		],
-		"reverse": true,
+		"reverse": false,
 		"show_context": true,
 		"use_buffer": true,
 		"whole_word": false,
@@ -533,29 +546,29 @@
 	"groups":
 	[
 		{
-			"selected": 8,
+			"selected": 4,
 			"sheets":
 			[
 				{
 					"buffer": 0,
-					"file": "/C/Users/shivam/Documents/Projects/aeries-mobile/Student.py",
+					"file": "/C/Users/shivam/Documents/school/2012-13/1_eng/like water for chocolate/essay.tex",
 					"settings":
 					{
-						"buffer_size": 663,
+						"buffer_size": 386,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								502,
-								502
+								386,
+								386
 							]
 						],
 						"settings":
 						{
 							"incomplete_sync": null,
-							"syntax": "Packages/Djaneiro/Syntaxes/Python Django.tmLanguage"
+							"syntax": "Packages/LaTeX/LaTeX.tmLanguage"
 						},
 						"translation.x": 0,
 						"translation.y": 0,
@@ -565,51 +578,52 @@
 				},
 				{
 					"buffer": 1,
-					"file": "/C/Users/shivam/Documents/Projects/aeries-mobile/AeriesAPI.py",
+					"file": "/C/Users/shivam/Documents/school/2012-13/1_eng/like water for chocolate/outline.tex",
 					"settings":
 					{
-						"buffer_size": 3889,
+						"buffer_size": 1318,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								3122,
-								3122
+								251,
+								251
 							]
 						],
 						"settings":
 						{
 							"incomplete_sync": null,
-							"syntax": "Packages/Djaneiro/Syntaxes/Python Django.tmLanguage"
+							"syntax": "Packages/LaTeX/LaTeX.tmLanguage",
+							"tab_size": 1
 						},
 						"translation.x": 0,
-						"translation.y": 1074,
+						"translation.y": 0,
 						"zoom_level": 1
 					},
 					"type": "text"
 				},
 				{
 					"buffer": 2,
-					"file": "/C/Users/shivam/Documents/Projects/aeries-mobile/tests/AeriesAPITester.py",
+					"file": "/C/Users/shivam/Documents/school/2012-13/1_eng/like water for chocolate/content.tex",
 					"settings":
 					{
-						"buffer_size": 290,
+						"buffer_size": 2138,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								268,
-								261
+								156,
+								156
 							]
 						],
 						"settings":
 						{
 							"incomplete_sync": null,
-							"syntax": "Packages/Djaneiro/Syntaxes/Python Django.tmLanguage"
+							"syntax": "Packages/LaTeX/LaTeX.tmLanguage"
 						},
 						"translation.x": 0,
 						"translation.y": 0,
@@ -619,159 +633,78 @@
 				},
 				{
 					"buffer": 3,
-					"file": "/C/Users/shivam/Documents/Projects/aeries-mobile/hello.py",
+					"file": "/C/Users/shivam/Documents/school/2012-13/4_philo/maltese falcon/outline.md",
 					"settings":
 					{
-						"buffer_size": 1563,
+						"buffer_size": 1210,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								1019,
-								1019
+								498,
+								498
 							]
 						],
 						"settings":
 						{
 							"incomplete_sync": null,
-							"syntax": "Packages/Djaneiro/Syntaxes/Python Django.tmLanguage"
+							"syntax": "Packages/Markdown/Markdown.tmLanguage",
+							"tab_size": 1
 						},
 						"translation.x": 0,
-						"translation.y": 33,
+						"translation.y": 0,
 						"zoom_level": 1
 					},
 					"type": "text"
 				},
 				{
 					"buffer": 4,
-					"file": "/C/Users/shivam/Documents/Projects/aeries-mobile/templates/class.html",
 					"settings":
 					{
-						"buffer_size": 2970,
+						"buffer_size": 786,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								594,
-								594
+								0,
+								786
 							]
 						],
 						"settings":
 						{
 							"incomplete_sync": null,
-							"syntax": "Packages/HTML/HTML.tmLanguage"
+							"syntax": "Packages/Text/Plain text.tmLanguage"
 						},
 						"translation.x": 0,
-						"translation.y": 0,
+						"translation.y": 32,
 						"zoom_level": 1
 					},
 					"type": "text"
 				},
 				{
 					"buffer": 5,
-					"file": "/C/Users/shivam/Documents/Projects/aeries-mobile/templates/gradebook.html",
+					"file": "/C/Users/shivam/AppData/Roaming/Sublime Text 2/Packages/User/LaTeX.sublime-settings",
 					"settings":
 					{
-						"buffer_size": 2554,
+						"buffer_size": 102,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								2316,
-								2316
+								0,
+								102
 							]
 						],
 						"settings":
 						{
 							"incomplete_sync": null,
-							"syntax": "Packages/HTML/HTML.tmLanguage"
-						},
-						"translation.x": 0,
-						"translation.y": 530,
-						"zoom_level": 1
-					},
-					"type": "text"
-				},
-				{
-					"buffer": 6,
-					"file": "/C/Users/shivam/Documents/Projects/aeries-mobile/templates/login.html",
-					"settings":
-					{
-						"buffer_size": 1719,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								1480,
-								1407
-							]
-						],
-						"settings":
-						{
-							"incomplete_sync": null,
-							"syntax": "Packages/Djaneiro/Syntaxes/HTML (Django).tmLanguage"
-						},
-						"translation.x": 0,
-						"translation.y": 114,
-						"zoom_level": 1
-					},
-					"type": "text"
-				},
-				{
-					"buffer": 7,
-					"file": "/C/Users/shivam/Documents/Projects/aeries-mobile/static/style.css",
-					"settings":
-					{
-						"buffer_size": 3812,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								3660,
-								3660
-							]
-						],
-						"settings":
-						{
-							"incomplete_sync": null,
-							"syntax": "Packages/CSS/CSS.tmLanguage"
-						},
-						"translation.x": 0,
-						"translation.y": 2834,
-						"zoom_level": 1
-					},
-					"type": "text"
-				},
-				{
-					"buffer": 8,
-					"file": "/C/Users/shivam/Documents/Projects/aeries-mobile/static/script.js",
-					"settings":
-					{
-						"buffer_size": 1226,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								220,
-								220
-							]
-						],
-						"settings":
-						{
-							"incomplete_sync": null,
-							"syntax": "Packages/JavaScript/JavaScript.tmLanguage"
+							"syntax": "Packages/JavaScript/JSON.tmLanguage"
 						},
 						"translation.x": 0,
 						"translation.y": 0,
@@ -780,25 +713,25 @@
 					"type": "text"
 				},
 				{
-					"buffer": 9,
-					"file": "/C/Users/shivam/Documents/Projects/aeries-mobile/login.py",
+					"buffer": 6,
+					"file": "/C/Users/shivam/AppData/Roaming/Sublime Text 2/Packages/User/Markdown.sublime-settings",
 					"settings":
 					{
-						"buffer_size": 529,
+						"buffer_size": 102,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								529,
-								529
+								102,
+								102
 							]
 						],
 						"settings":
 						{
 							"incomplete_sync": null,
-							"syntax": "Packages/Djaneiro/Syntaxes/Python Django.tmLanguage"
+							"syntax": "Packages/JavaScript/JSON.tmLanguage"
 						},
 						"translation.x": 0,
 						"translation.y": 0,
@@ -839,7 +772,7 @@
 			1
 		]
 	},
-	"menu_visible": true,
+	"menu_visible": false,
 	"output.sftp":
 	{
 		"height": 24
@@ -872,7 +805,7 @@
 	"show_minimap": true,
 	"show_open_files": true,
 	"show_tabs": true,
-	"side_bar_visible": true,
-	"side_bar_width": 260,
+	"side_bar_visible": false,
+	"side_bar_width": 50,
 	"status_bar_visible": true
 }
