@@ -98,7 +98,7 @@ h1,h2,h3,h4,h5,h6{
 	height: 40px;
 }
 
-#logo-bar .info-button{
+#logo-bar #drop-menu{
 	float: right;
 	position: absolute;
 	right: 10px;
@@ -107,14 +107,20 @@ h1,h2,h3,h4,h5,h6{
 	text-decoration: none;
 }
 
-#logo-bar .info-button i{	
+#logo-bar #drop-menu i{	
 	font-size: 20px;
 	color: #16586F;
 }
 
-#logo-bar .info-button i:hover{
+#logo-bar #drop-menu i:hover{
 	color: white;
 }
+
+.dropdown-menu{
+	left: auto;
+	right: 0;
+}
+
 
 #login-box{
 	width: 100%;

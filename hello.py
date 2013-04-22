@@ -1,5 +1,7 @@
 import os
 from flask import Flask
+from flask import redirect
+from flask import url_for
 from flask import render_template
 from flask import request
 from flask import g
@@ -59,6 +61,12 @@ def period(class_id):
 	assignments=new_ass
 	return render_template('class.html', assignments=assignments, total_scores= total_scores, period_name=period_name, weighted=weighted)
 
+@app.route('/logout')
+def logout():
+	session.clear()
+	return redirect(url_for('index'))
+
+
 @app.errorhandler(404)
 def page_not_found(e):
     return render_template('404.html'), 404
@@ -69,4 +77,4 @@ def page_not_found(e):
 
 if __name__ == '__main__':
 	port = int(os.environ.get('PORT', 5000))
-	app.run(host='0.0.0.0', port=port, debug=False)
+	app.run(host='0.0.0.0', port=port, debug=True)
